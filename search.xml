@@ -3,6 +3,21 @@
   
     
     <entry>
+      <title>new post</title>
+      <link href="/2018/06/16/new/"/>
+      <url>/2018/06/16/new/</url>
+      <content type="html"><![CDATA[]]></content>
+      
+      <categories>
+          
+          <category> reversing </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    <entry>
       <title>Hello World</title>
       <link href="/2018/06/14/hello-world/"/>
       <url>/2018/06/14/hello-world/</url>
