@@ -21,7 +21,7 @@
       <title>What is reversing??</title>
       <link href="/2018/06/16/reversing/"/>
       <url>/2018/06/16/reversing/</url>
-      <content type="html"><![CDATA[]]></content>
+      <content type="html"><![CDATA[<p>##Reversing</p><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$hexo</span> what is reversing?  </span><br><span class="line"><span class="comment">#include &lt;stdio.h&gt;</span></span><br><span class="line">int main(void)</span><br><span class="line">&#123;</span><br><span class="line"><span class="built_in">printf</span>(<span class="string">"hello world!"</span>);</span><br><span class="line"><span class="built_in">return</span> 0;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
       
       <categories>
           
