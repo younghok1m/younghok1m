@@ -94,10 +94,60 @@
     </entry>
     
     <entry>
+      <title>crypto is my Mother</title>
+      <link href="/2017/12/06/crypto/"/>
+      <url>/2017/12/06/crypto/</url>
+      <content type="html"><![CDATA[<p><img src="./images/crypto2.jpg" alt="sc"></p>]]></content>
+      
+      <categories>
+          
+          <category> Writeup </category>
+          
+          <category> ch4n3 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> wargame </tag>
+            
+            <tag> ch4n3 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>crypto is my Mother</title>
+      <link href="/2017/12/06/test/"/>
+      <url>/2017/12/06/test/</url>
+      <content type="html"><![CDATA[<p><img src="./images/crypto1.jpg" alt="sc"></p>]]></content>
+      
+      <categories>
+          
+          <category> Writeup </category>
+          
+          <category> ch4n3 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> wargame </tag>
+            
+            <tag> ch4n3 world </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>hello world</title>
       <link href="/2016/03/30/tt/"/>
       <url>/2016/03/30/tt/</url>
-      <content type="html"><![CDATA[<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script><div id="security">  <div class="input-container">  <input type="password" class="form-control" id="pass" placeholder="Welcome to my blog, enter password to read." />    <label for="pass">Welcome to my blog, enter password to read.</label>    <div class="bottom-line"></div>  </div></div><div id="decryptionError" style="display: none;">Incorrect Password!</div><div id="noContentError" style="display: none;">No content to display!</div><div id="encrypt-blog" style="display:none">U2FsdGVkX189zZ61TIhABCBi4ksF1u/Q/FZ8hbB/9TM=</div><script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
+      <content type="html"><![CDATA[<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script><div id="security">  <div class="input-container">  <input type="password" class="form-control" id="pass" placeholder="Welcome to my blog, enter password to read." />    <label for="pass">Welcome to my blog, enter password to read.</label>    <div class="bottom-line"></div>  </div></div><div id="decryptionError" style="display: none;">Incorrect Password!</div><div id="noContentError" style="display: none;">No content to display!</div><div id="encrypt-blog" style="display:none">U2FsdGVkX1/UvTYNvdyYgOpYwRaczhoWTvUDZCF5u7E=</div><script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
       
       
         <tags>
