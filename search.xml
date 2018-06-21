@@ -97,32 +97,7 @@
       <title>crypto is my Mother</title>
       <link href="/2017/12/06/crypto/"/>
       <url>/2017/12/06/crypto/</url>
-      <content type="html"><![CDATA[<p><img src="./images/crypto2.jpg" alt="sc"></p>]]></content>
-      
-      <categories>
-          
-          <category> Writeup </category>
-          
-          <category> ch4n3 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> wargame </tag>
-            
-            <tag> ch4n3 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    <entry>
-      <title>crypto is my Mother</title>
-      <link href="/2017/12/06/test/"/>
-      <url>/2017/12/06/test/</url>
-      <content type="html"><![CDATA[<p><img src="./images/crypto1.jpg" alt="sc"></p>]]></content>
+      <content type="html"><![CDATA[<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script><div id="security">  <div class="input-container">  <input type="password" class="form-control" id="pass" placeholder="Enter password to read." />    <label for="pass">Enter password to read.</label>    <div class="bottom-line"></div>  </div></div><div id="decryptionError" style="display: none;">Incorrect Password!</div><div id="noContentError" style="display: none;">No content to display!</div><div id="encrypt-blog" style="display:none">U2FsdGVkX19oJ3HgM3xCz9C+eD+c93phGaGu0n9vBsc5HAQpvjXqQ16zrxAHRDagq/VwYEbL8wRIkT3k+gxJSCrbHS86M6ZpQvDvETzhURyR5DhtFl5OkTuV7eaBjowFmFj3iS313durqXjVx31/bzGpBI6vXNid0834p37jKmu2GEiGgsQqbS4nm6s2vN8F0oYBXFuffEdacrtNxbdxzaQDJv9lbIqwwGgqhlWeAVZ0jCg6F6u9bmXDhcb2BciiUMG3cgSnC72hj3uxJ3DQ4QXob0bbWFNsRIg0lDpZELMGQ7N7XPBPD2JAXPYy0SI6xamse0heEy/u5lX+fdHAhCbc7KoNXc1kI7iwjEI5zK6I9BVBq3QYUNhZupUrfnxsq67cHtMAJpgOXZu5IDcvuBlc6cSnOdT/DZE8mpbyy6Bi21bkfkEsihEmOIV9laYa8YMkylrWwYhM8kWs4+ctONkLzzn9fiBDppB/T+Wd0AYjbLS5Lm1//b1H0RYIAKsWNW7+sNDQmnXtV3fJ1woT4AHJPAdnZVtS42L/W2aZdFnTGGscKMKCFq6dRu2alsAUyMZsvYyeXRtjfIoFbbArcRYykxEruObdbE90dk5viCv0RbzEJ0r72+09fuMpv3wT5PCEwXq61295D3P8VFsRbW6PbLCEbOS4vqM9caCQsqQhee182UrySKNO+0VAj0zDSpmSth7ol5RIK2gkPD97YHPOqNXe3P86Lab/pYJBim5lppcPhh4pteKmnZLtY+AMzHVOqwnDWf21wRb5GHS8WsmBgUKX8NREySIN7d2HLUL79FzS1j0ea2Tuy7X2Kic4y9cVPbqQ6xAQp1xfq15P+nlxWeK2Ji4r5Wv6P+hZEg9C0/BIchLIQQ7/Ur4FhxYEFMT4b4Mp9h+g1KcDOwLeVuEb5dIQpCUBNi1UQ0yhJtWX2Ii5nvDvX4k2eDoVqB7Ka1fsVSS+tycIXRCqOABiTMJ5/Ba3Y1AxexbECKrO6sv+PhESRYnD9p3bjQ1e/SnXyLztUo26+N1RGCo9fVpQl868RXXn2nGKW9+iXxU6r3Byv2GGSh2bu3heiineDs9J0TEMRobNW/weY0aXFlzXgS7tMKDdCKxvhJlOh8Nagp8e9Q6+oX1vz9ZcY3JD2pIBXkLM56SzWplA0iEiuH5b/IXm/KWHMX/tiXQ5s/RbeZ0WBGJt7lJ7LwYIiuRXFCkCfmG4pkQE9Uy/aK4Lep9J7TyaH9TQ/ID2XeXumAoXoEjV9Vn1UPt3NVZyXu0Sgpyh</div><script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
       
       <categories>
           
@@ -147,7 +122,7 @@
       <title>hello world</title>
       <link href="/2016/03/30/tt/"/>
       <url>/2016/03/30/tt/</url>
-      <content type="html"><![CDATA[<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script><div id="security">  <div class="input-container">  <input type="password" class="form-control" id="pass" placeholder="Welcome to my blog, enter password to read." />    <label for="pass">Welcome to my blog, enter password to read.</label>    <div class="bottom-line"></div>  </div></div><div id="decryptionError" style="display: none;">Incorrect Password!</div><div id="noContentError" style="display: none;">No content to display!</div><div id="encrypt-blog" style="display:none">U2FsdGVkX1/UvTYNvdyYgOpYwRaczhoWTvUDZCF5u7E=</div><script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
+      <content type="html"><![CDATA[<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script><div id="security">  <div class="input-container">  <input type="password" class="form-control" id="pass" placeholder="Welcome to my blog, enter password to read." />    <label for="pass">Welcome to my blog, enter password to read.</label>    <div class="bottom-line"></div>  </div></div><div id="decryptionError" style="display: none;">Incorrect Password!</div><div id="noContentError" style="display: none;">No content to display!</div><div id="encrypt-blog" style="display:none">U2FsdGVkX19r5gzlLANJd+0fhnYwk8WXPcLE8eOsIas=</div><script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
       
       
         <tags>
