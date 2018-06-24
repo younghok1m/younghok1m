@@ -94,10 +94,60 @@
     </entry>
     
     <entry>
+      <title>Base인코딩을 아니?(Crypto)</title>
+      <link href="/2017/12/06/baseencoding/"/>
+      <url>/2017/12/06/baseencoding/</url>
+      <content type="html"><![CDATA[<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script><div id="security">  <div class="input-container">  <input type="password" class="form-control" id="pass" placeholder="Enter password to read." />    <label for="pass">Enter password to read.</label>    <div class="bottom-line"></div>  </div></div><div id="decryptionError" style="display: none;">Incorrect Password!</div><div id="noContentError" style="display: none;">No content to display!</div><div id="encrypt-blog" style="display:none">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</div><script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
+      
+      <categories>
+          
+          <category> Writeup </category>
+          
+          <category> ch4n3 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> wargame </tag>
+            
+            <tag> ch4n3 world </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>crypto is my Mother</title>
       <link href="/2017/12/06/crypto/"/>
       <url>/2017/12/06/crypto/</url>
       <content type="html"><![CDATA[<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script><div id="security">  <div class="input-container">  <input type="password" class="form-control" id="pass" placeholder="Enter password to read." />    <label for="pass">Enter password to read.</label>    <div class="bottom-line"></div>  </div></div><div id="decryptionError" style="display: none;">Incorrect Password!</div><div id="noContentError" style="display: none;">No content to display!</div><div id="encrypt-blog" style="display:none">U2FsdGVkX19bBon4bl5CKpNz3BeRhDiFmILuesXmJ4hOW3y+qUvlWFUg/jRA/KrAVa7iti5zK0857BsDbXWKFRsIlvdAzhdaGT5cjBEBHkxgXXfJwfMt774Ao6xs8hYibmtlxU9s0AiPafiP+hKu+cFyUDHFpa9LLdbQrGv8fPNjFWRNVv9TF2C6LnL6Q+QAfEenyps39Q2Q2GR3xo9XfSYtr4aFixiV0ZUdt0tk86Dl4OVa6OOWhdENA/EX+nclOYYrrN4vPTsp0/bq+FCpPVBp85SuzIPWE5D+cj+9BfJjxqcQalqjdxD2fq5MABme50/vICYNwfvKGyhVowk/7DeVYorVoggTS0Uj2GFBJYL72AEOxxVDXHDaDyELh8k/r3fPcQbpZ4DqwFR6ehPPVXtEZNuM5nevHXvS4a2zQAVmBeRlSHnam72G5kcdRve8jtNDPUEXD7tS38P2CUpPX5KQSLFLU/M5AVUtO9u5J1glxU0SANFyfDPQUchsO+FbOPzzrMonYT2nZolbd21ml+ukuQyxA4exbXyadOHwq/of2dF1AWWSdMSXSnCMdXDRRv5dS3IWkQQ+qoLIaddeq/6gl4YOijwNK+5ULDAmFIcb0MIsmXXNGElub4ckBih5nvxiImxI6q2F2rOiIc9IixEJl0UAnBf4MnHMvgSbMVWkEV1zNZLtUiUmMFiL6/QY/WFB81nzWg0BthyN8HTBKaaRrobyK2i7/w9tVTxWxnvKgMbfMmK6c797gcuxDeM6lzz20LIhztJvyJJKnrTVa/EbLzoTeRYk5gm3YvXwMiv8ipx5mvNUe5cB9cVRzsi7e+4OXIpQOb3sTPGUmCccJ6dxJKxzFmsQaTpOn12t4EXvQoDttztQ7jUpf/P57tHo27ibyOUkU0znCXjboMN17dr9kpZL6BjwtQSfH//4fFfbTzz2mH6axJuQtWHz76euW64UwBB+VhzqwnqW7m83gcTOXkwMcD7VFC1hFg6hllvQivpcOZs4OfRLN/EOQKgc2xfI8TBIDgv66OyZkD1LRxlVoepEnXztPtVQHXUdupu0DU1iJipmOdNZ9r1AJDzsNxlGrJAUhL22wjvAWVz4cxohtT1sMGZC9WuT7XC23nZuI5pOG7mS3XWfFoWO/7+hFAW8Y1ps4tBi2XMZTT3prjuKjYeNbjeJvuI7dGRv+MfJGY9hpQv0+n6haSYNrzHzqvXTkoluIT0+EomyKaxn5UkX6CQE+6VMzxbx84A1j+s=</div><script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
+      
+      <categories>
+          
+          <category> Writeup </category>
+          
+          <category> ch4n3 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> wargame </tag>
+            
+            <tag> ch4n3 world </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>Simple Blind SQLi</title>
+      <link href="/2017/12/05/SimpleBlindSql/"/>
+      <url>/2017/12/05/SimpleBlindSql/</url>
+      <content type="html"><![CDATA[<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script><div id="security">  <div class="input-container">  <input type="password" class="form-control" id="pass" placeholder="Enter password to read." />    <label for="pass">Enter password to read.</label>    <div class="bottom-line"></div>  </div></div><div id="decryptionError" style="display: none;">Incorrect Password!</div><div id="noContentError" style="display: none;">No content to display!</div><div id="encrypt-blog" style="display:none">U2FsdGVkX1+10PomkbnAsKs9Xgtvg/2mPHn50u9rC9YCrNN6RrgUeZX30kuc060cCFdi3+Ju0+aiDeuzv6ey/WnApzZHyOp8dH42PGuLCffTuEM9AcC5luoeDJfGyvNk7SGR/1x4Rk8lgOJyriT0ENFPODwuO08k4LomAjZy7j2rrw6/O1h+UMX128q1BVfn1Q5P7boTrvImCMt5HM5pnW2n6QscXVrL1M9PDaGbpm2WfWNsRX4MIIElVsA9WOSu+ZgNKay4yAog5vML8z2uVL7tDzm87/CVCLic4ci4xiHBiFynQIgxF2lj4JDrJQZ2AX7zwIum1rDyRuHHeRu8sNe13QwjvQBiFqPt9rbmC75G1bXr6PCDPqVrkd/XOSEkRfX+Aapa+AEMmxPDQepMpI/P/cO2qAsIU07Nt2krpYaT0XjsO91KZJKmQGQaUemAGAmw1EO3tUmBpwYMqBRLDjZ4trexI8l6JzHfr9WEgtJ5rzemC9y9JXCyGEAxe9xVJh29yEvAw5yW0RlG2JLbPIsiuTLYpk3BTdOSBvpg06Bx+5+76thpWkvgzaquK0Gpl8L+8trnCG3g1IiTWZfzJSYP7sycrYUAwLmVNHk1bNB6v1CwJy0vhM4t/Jr64/9QSJ2zG7De8MqCi0UIETs5eozeEgjo4KungInyGIniuB47D0vXwSExFZXHywVScRWrn8OW/I+IBavcCL6ETD959FjELDyLJdbn/35/wSnETEIhQYalA4PTBhJBx2dB5TuJzq/DModeCZa8l95qzVaTrA==</div><script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
       
       <categories>
           

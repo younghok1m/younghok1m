@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="wargame,ch4n3 world," />
 
 
 
@@ -79,13 +79,18 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Reverse">
-<meta property="og:url" content="http://younghok1m.github.io/categories/Programming/C/index.html">
+<meta name="description" content="Enter password to read.">
+<meta name="keywords" content="wargame,ch4n3 world">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Base인코딩을 아니?(Crypto)">
+<meta property="og:url" content="http://younghok1m.github.io/2017/12/06/baseencoding/index.html">
 <meta property="og:site_name" content="Reverse">
+<meta property="og:description" content="Enter password to read.">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2018-06-24T14:26:46.717Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Reverse">
+<meta name="twitter:title" content="Base인코딩을 아니?(Crypto)">
+<meta name="twitter:description" content="Enter password to read.">
 
 
 
@@ -115,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://younghok1m.github.io/categories/Programming/C/"/>
+  <link rel="canonical" href="http://younghok1m.github.io/2017/12/06/baseencoding/"/>
 
 
 
 
 
-  <title>Category: C | Reverse</title>
+  <title>Base인코딩을 아니?(Crypto) | Reverse</title>
   
 
 
@@ -140,7 +145,7 @@
     
   
 
-  <div class="container sidebar-position-left ">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -268,55 +273,198 @@
           <div id="content" class="content">
             
 
-  
-  
-  
-  <div class="post-block category">
+  <div id="posts" class="posts-expand">
+    
 
-    <div id="posts" class="posts-collapse">
-      <div class="collection-title">
-        <h1>C<small>Category</small>
-        </h1>
-      </div>
+  
 
-      
-        
+  
+  
+  
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://younghok1m.github.io/2017/12/06/baseencoding/">
 
-      <h2 class="post-title">
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Reverse">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Reverse">
+    </span>
+
+    
+      <header class="post-header">
+
         
-            <a class="post-title-link" href="/2018/03/22/Argument/" itemprop="url">
-              
-                <span itemprop="name">매개변수와 인자의 차이점</span>
-              
-            </a>
         
-      </h2>
+          <h1 class="post-title" itemprop="name headline">Base인코딩을 아니?(Crypto)</h1>
+        
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2018-03-22T22:30:00+09:00"
-              content="2018-03-22" >
-          03-22
-        </time>
-      </div>
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-12-06T16:51:00+09:00">
+                2017-12-06
+              </time>
+            
 
-    </header>
-  </article>
+            
 
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Writeup/" itemprop="url" rel="index">
+                    <span itemprop="name">Writeup</span>
+                  </a>
+                </span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Writeup/ch4n3/" itemprop="url" rel="index">
+                    <span itemprop="name">ch4n3</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-    </div>
+      
 
+      
+        <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<div id="security">
+  <div class="input-container">
+  <input type="password" class="form-control" id="pass" placeholder="Enter password to read." />
+    <label for="pass">Enter password to read.</label>
+    <div class="bottom-line"></div>
+  </div>
+</div>
+<div id="decryptionError" style="display: none;">Incorrect Password!</div>
+<div id="noContentError" style="display: none;">No content to display!</div>
+<div id="encrypt-blog" style="display:none">
+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
+</div>
+<script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/wargame/" rel="tag"># wargame</a>
+          
+            <a href="/tags/ch4n3-world/" rel="tag"># ch4n3 world</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/12/06/crypto/" rel="next" title="crypto is my Mother">
+                <i class="fa fa-chevron-left"></i> crypto is my Mother
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/03/10/php7/" rel="prev" title="php7 에서 mysql 데이터 가져오기">
+                php7 에서 mysql 데이터 가져오기 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </div>
   
   
   
+  </article>
 
-  
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -324,6 +472,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -538,6 +690,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
