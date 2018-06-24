@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="wargame,ch4n3 world," />
 
 
 
@@ -79,14 +79,18 @@
 
 
 
+<meta name="description" content="Enter password to read.">
+<meta name="keywords" content="wargame,ch4n3 world">
 <meta property="og:type" content="article">
-<meta property="og:title" content="new post">
-<meta property="og:url" content="http://younghok1m.github.io/2018/06/16/new/index.html">
+<meta property="og:title" content="Reverse!(Crypto)">
+<meta property="og:url" content="http://younghok1m.github.io/2017/12/06/Reverse/index.html">
 <meta property="og:site_name" content="Reverse">
+<meta property="og:description" content="Enter password to read.">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2018-06-16T03:23:35.741Z">
+<meta property="og:updated_time" content="2018-06-24T14:42:50.755Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="new post">
+<meta name="twitter:title" content="Reverse!(Crypto)">
+<meta name="twitter:description" content="Enter password to read.">
 
 
 
@@ -116,13 +120,13 @@
 
 
 
-  <link rel="canonical" href="http://younghok1m.github.io/2018/06/16/new/"/>
+  <link rel="canonical" href="http://younghok1m.github.io/2017/12/06/Reverse/"/>
 
 
 
 
 
-  <title>new post | Reverse</title>
+  <title>Reverse!(Crypto) | Reverse</title>
   
 
 
@@ -283,7 +287,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://younghok1m.github.io/2018/06/16/new/">
+    <link itemprop="mainEntityOfPage" href="http://younghok1m.github.io/2017/12/06/Reverse/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Reverse">
@@ -300,7 +304,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">new post</h1>
+          <h1 class="post-title" itemprop="name headline">Reverse!(Crypto)</h1>
         
 
         <div class="post-meta">
@@ -312,8 +316,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-06-16T12:12:12+09:00">
-                2018-06-16
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-12-06T16:58:00+09:00">
+                2017-12-06
               </time>
             
 
@@ -335,8 +339,19 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/reversing/" itemprop="url" rel="index">
-                    <span itemprop="name">reversing</span>
+                  <a href="/categories/Writeup/" itemprop="url" rel="index">
+                    <span itemprop="name">Writeup</span>
+                  </a>
+                </span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Writeup/ch4n3/" itemprop="url" rel="index">
+                    <span itemprop="name">ch4n3</span>
                   </a>
                 </span>
 
@@ -372,7 +387,20 @@
       
 
       
-        
+        <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<div id="security">
+  <div class="input-container">
+  <input type="password" class="form-control" id="pass" placeholder="Enter password to read." />
+    <label for="pass">Enter password to read.</label>
+    <div class="bottom-line"></div>
+  </div>
+</div>
+<div id="decryptionError" style="display: none;">Incorrect Password!</div>
+<div id="noContentError" style="display: none;">No content to display!</div>
+<div id="encrypt-blog" style="display:none">
+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
+</div>
+<script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">
       
     </div>
     
@@ -387,6 +415,14 @@
 
     <footer class="post-footer">
       
+        <div class="post-tags">
+          
+            <a href="/tags/wargame/" rel="tag"># wargame</a>
+          
+            <a href="/tags/ch4n3-world/" rel="tag"># ch4n3 world</a>
+          
+        </div>
+      
 
       
       
@@ -396,8 +432,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/06/16/reversing/" rel="next" title="What is reversing??">
-                <i class="fa fa-chevron-left"></i> What is reversing??
+              <a href="/2017/12/06/baseencoding/" rel="next" title="Base인코딩을 아니?(Crypto)">
+                <i class="fa fa-chevron-left"></i> Base인코딩을 아니?(Crypto)
               </a>
             
           </div>
@@ -406,8 +442,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2018/06/17/hello-world/" rel="prev" title="Hello World">
-                Hello World <i class="fa fa-chevron-right"></i>
+              <a href="/2017/12/06/whatcanido/" rel="prev" title="What can i do?(Web)">
+                What can i do?(Web) <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
