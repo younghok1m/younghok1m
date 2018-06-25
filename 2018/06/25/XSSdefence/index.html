@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="php," />
 
 
 
@@ -79,14 +79,21 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="tags">
-<meta property="og:url" content="http://younghok1m.github.io/tags/index.html">
+<meta name="description" content="요새 Wargame아이디어가 생길때마다 만들고있다.Web문제를 만들던도중 게시판에서 XSS공격을 막기위해 방어할수 있는 코드를 짜려고 인터넷에 찾아보니 생각보다 자세하게 나와있지가 않았다.그래서 내가 짠코드라 완벽하지는 않지만 일단 기본적으로 &amp;lt; 를 &amp;amp;lt등으로 치환시키면 방어할 수 있기에 코드를 작성해본다. 1234567891011121314">
+<meta name="keywords" content="php">
+<meta property="og:type" content="article">
+<meta property="og:title" content="XSS 방어코드작성법">
+<meta property="og:url" content="http://younghok1m.github.io/2018/06/25/XSSdefence/index.html">
 <meta property="og:site_name" content="Reverse">
+<meta property="og:description" content="요새 Wargame아이디어가 생길때마다 만들고있다.Web문제를 만들던도중 게시판에서 XSS공격을 막기위해 방어할수 있는 코드를 짜려고 인터넷에 찾아보니 생각보다 자세하게 나와있지가 않았다.그래서 내가 짠코드라 완벽하지는 않지만 일단 기본적으로 &amp;lt; 를 &amp;amp;lt등으로 치환시키면 방어할 수 있기에 코드를 작성해본다. 1234567891011121314">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2018-06-16T14:19:26.336Z">
+<meta property="og:image" content="https://user-images.githubusercontent.com/40205791/41856087-2b94dea2-78cf-11e8-8d35-cb91f1887a86.JPG">
+<meta property="og:image" content="https://user-images.githubusercontent.com/40205791/41856106-372f5b02-78cf-11e8-9764-035e044f315e.jpg">
+<meta property="og:updated_time" content="2018-06-25T14:38:20.966Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="tags">
+<meta name="twitter:title" content="XSS 방어코드작성법">
+<meta name="twitter:description" content="요새 Wargame아이디어가 생길때마다 만들고있다.Web문제를 만들던도중 게시판에서 XSS공격을 막기위해 방어할수 있는 코드를 짜려고 인터넷에 찾아보니 생각보다 자세하게 나와있지가 않았다.그래서 내가 짠코드라 완벽하지는 않지만 일단 기본적으로 &amp;lt; 를 &amp;amp;lt등으로 치환시키면 방어할 수 있기에 코드를 작성해본다. 1234567891011121314">
+<meta name="twitter:image" content="https://user-images.githubusercontent.com/40205791/41856087-2b94dea2-78cf-11e8-8d35-cb91f1887a86.JPG">
 
 
 
@@ -116,13 +123,13 @@
 
 
 
-  <link rel="canonical" href="http://younghok1m.github.io/tags/"/>
+  <link rel="canonical" href="http://younghok1m.github.io/2018/06/25/XSSdefence/"/>
 
 
 
 
 
-  <title>tags | Reverse</title>
+  <title>XSS 방어코드작성법 | Reverse</title>
   
 
 
@@ -271,40 +278,183 @@
 
   <div id="posts" class="posts-expand">
     
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://younghok1m.github.io/2018/06/25/XSSdefence/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Reverse">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Reverse">
+    </span>
+
     
-    
-    <div class="post-block page">
       <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">tags</h1>
-
-
-
-</header>
-
-      
-      
-      
-      <div class="post-body">
         
         
-          <div class="tag-cloud">
-            <div class="tag-cloud-title">
-                6 tags in total
-            </div>
-            <div class="tag-cloud-tags">
-              <a href="/tags/C/" style="font-size: 12px; color: #ccc">C</a> <a href="/tags/Wargame/" style="font-size: 30px; color: #111">Wargame</a> <a href="/tags/ch4n3/" style="font-size: 30px; color: #111">ch4n3</a> <a href="/tags/fdsafsdaf/" style="font-size: 12px; color: #ccc">fdsafsdaf</a> <a href="/tags/php/" style="font-size: 21px; color: #6f6f6f">php</a> <a href="/tags/reversin-g/" style="font-size: 12px; color: #ccc">reversin:g</a>
-            </div>
-          </div>
+          <h1 class="post-title" itemprop="name headline">XSS 방어코드작성법</h1>
         
-      </div>
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-06-25T23:18:00+09:00">
+                2018-06-25
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Programming/" itemprop="url" rel="index">
+                    <span itemprop="name">Programming</span>
+                  </a>
+                </span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Programming/php/" itemprop="url" rel="index">
+                    <span itemprop="name">php</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
       
       
+
+      
+        <p>요새 Wargame아이디어가 생길때마다 만들고있다.<br>Web문제를 만들던도중 게시판에서 XSS공격을 막기위해 방어할수 있는 코드를 짜려고 인터넷에 찾아보니 생각보다 자세하게 나와있지가 않았다.<br>그래서 내가 짠코드라 완벽하지는 않지만 일단 기본적으로 &lt; 를 &amp;lt등으로 치환시키면 방어할 수 있기에 코드를 작성해본다.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">        error_reporting(E_ALL);</span><br><span class="line">        <span class="keyword">function</span> <span class="function"><span class="title">text_filter</span></span>()&#123;</span><br><span class="line"></span><br><span class="line">        <span class="variable">$text_string</span> = <span class="variable">$_POST</span>[<span class="string">'text'</span>];</span><br><span class="line">        <span class="variable">$pattern</span>[0] = <span class="string">'/&lt;/'</span>;</span><br><span class="line">        <span class="variable">$pattern</span>[1] = <span class="string">'/&gt;/'</span>;</span><br><span class="line">        <span class="variable">$replace</span>[0] = <span class="string">'&amp;lt'</span>;</span><br><span class="line">        <span class="variable">$replace</span>[1] = <span class="string">'&amp;gt'</span>;</span><br><span class="line"></span><br><span class="line">        <span class="variable">$replace_text</span> = preg_replace(<span class="variable">$pattern</span>,<span class="variable">$replace</span>,<span class="variable">$text_string</span>);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        <span class="built_in">return</span> <span class="variable">$replace_text</span>;</span><br><span class="line">        &#125;</span><br><span class="line">?&gt;</span><br></pre></td></tr></table></figure>
+<p><img src="https://user-images.githubusercontent.com/40205791/41856087-2b94dea2-78cf-11e8-8d35-cb91f1887a86.JPG" alt="1"><br>text_filter함수로 게시판에서 내용(content)에 해당하는 부분에 XSS공격을 막기위한 코드이다.<br>일단 preg_replace함수 사용법을 알아야하는데 이정도는 충분히 검색을 통해 알수 있을거라 생각한다.<br>$pattern에 &lt; 와 &gt; 를 각각 배열로 주고 replace로 &amp;lt 와 &amp;gt로 치환시키게되면 가장 기본적인 script 구문이<br>성립되지 않기때문에 XSS공격을 방어할수 있다.<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line">&lt;?php</span><br><span class="line">        error_reporting(E_ALL);</span><br><span class="line">        <span class="keyword">function</span> <span class="function"><span class="title">title_filter</span></span>()&#123;</span><br><span class="line"></span><br><span class="line">        <span class="variable">$title_string</span> = <span class="variable">$_POST</span>[<span class="string">'title'</span>];</span><br><span class="line">        <span class="variable">$pattern</span>[0] = <span class="string">'/&lt;/'</span>;</span><br><span class="line">        <span class="variable">$pattern</span>[1] = <span class="string">'/&gt;/'</span>;</span><br><span class="line">        <span class="variable">$replace</span>[0] = <span class="string">'&amp;lt'</span>;</span><br><span class="line">        <span class="variable">$replace</span>[1] = <span class="string">'&amp;gt'</span>;</span><br><span class="line"></span><br><span class="line">        <span class="variable">$replace_title</span> = preg_replace(<span class="variable">$pattern</span>,<span class="variable">$replace</span>,<span class="variable">$title_string</span>);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">        <span class="built_in">return</span> <span class="variable">$replace_title</span>;</span><br><span class="line">        &#125;</span><br><span class="line">?&gt;</span><br></pre></td></tr></table></figure></p>
+<p><img src="https://user-images.githubusercontent.com/40205791/41856106-372f5b02-78cf-11e8-9764-035e044f315e.jpg" alt="2"><br>다음은 title_filter함수로 게시판에서 제목(title)에 해당하는 부분에 XSS공격을 막기위한 코드이다.<br>text_filter와 마찬가지로 &lt; 와 &gt; 를 각각 replace시키기 때문에 XSS공격이 먹히지 않는다.<br>그럼 이제 두 함수를 만들었으니 가져다 써야한다.<br>일단 php코드 맨위에 다음과 같이 include 시켜주고 함수를 불러온다.</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">include <span class="string">"./title_filter.php"</span>;</span><br><span class="line">include <span class="string">"./text_filter.php"</span>;</span><br><span class="line"></span><br><span class="line"><span class="variable">$replace_title</span> = title_filter();</span><br><span class="line"><span class="variable">$replace_text</span> = text_filter();</span><br></pre></td></tr></table></figure>
+<p>내가 작성한 코드의 일부분이지만 XSS나 PHP를 조금만 공부한다면 다음과 같은 코드를 금방 이해할것이다.<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$query</span> = <span class="string">"insert into board(title,text,id,write_time) values('&#123;<span class="variable">$replace_title</span>&#125;','&#123;<span class="variable">$replace_text</span>&#125;','&#123;<span class="variable">$id</span>&#125;','&#123;<span class="variable">$write_time</span>&#125;')"</span>;</span><br></pre></td></tr></table></figure></p>
+<p>insert하는 부분을 보면 values에 작성해놓았던 두개의 함수 return값이 들어가는것을 볼 수 있다.<br>위처럼 작성하고 XSS공격을하게되면 XSS공격이 먹히지가 않는다.</p>
+
       
     </div>
     
     
     
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/php/" rel="tag"># php</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/06/25/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
   </div>
 
 
