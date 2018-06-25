@@ -94,31 +94,6 @@
     </entry>
     
     <entry>
-      <title>Random Integer(Web)</title>
-      <link href="/2017/12/06/RandomInteger/"/>
-      <url>/2017/12/06/RandomInteger/</url>
-      <content type="html"><![CDATA[<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script><div id="security">  <div class="input-container">  <input type="password" class="form-control" id="pass" placeholder="Enter password to read." />    <label for="pass">Enter password to read.</label>    <div class="bottom-line"></div>  </div></div><div id="decryptionError" style="display: none;">Incorrect Password!</div><div id="noContentError" style="display: none;">No content to display!</div><div id="encrypt-blog" style="display:none">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</div><script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
-      
-      <categories>
-          
-          <category> Writeup </category>
-          
-          <category> ch4n3 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> wargame </tag>
-            
-            <tag> ch4n3 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    <entry>
       <title>What can i do?(Web)</title>
       <link href="/2017/12/06/whatcanido/"/>
       <url>/2017/12/06/whatcanido/</url>
