@@ -94,6 +94,31 @@
     </entry>
     
     <entry>
+      <title>Where is admin&#39;s pw? (Web)</title>
+      <link href="/2017/12/06/whereisadminpw/"/>
+      <url>/2017/12/06/whereisadminpw/</url>
+      <content type="html"><![CDATA[<script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script><div id="security">  <div class="input-container">  <input type="password" class="form-control" id="pass" placeholder="Enter password to read." />    <label for="pass">Enter password to read.</label>    <div class="bottom-line"></div>  </div></div><div id="decryptionError" style="display: none;">Incorrect Password!</div><div id="noContentError" style="display: none;">No content to display!</div><div id="encrypt-blog" style="display:none">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</div><script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">]]></content>
+      
+      <categories>
+          
+          <category> Writeup </category>
+          
+          <category> ch4n3 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> ch4n3 </tag>
+            
+            <tag> Wargame </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>Random Integer(Web)</title>
       <link href="/2017/12/06/RandomInteger/"/>
       <url>/2017/12/06/RandomInteger/</url>
