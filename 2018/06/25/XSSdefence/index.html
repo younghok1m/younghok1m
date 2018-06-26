@@ -89,7 +89,8 @@
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https://user-images.githubusercontent.com/40205791/41856087-2b94dea2-78cf-11e8-8d35-cb91f1887a86.JPG">
 <meta property="og:image" content="https://user-images.githubusercontent.com/40205791/41856106-372f5b02-78cf-11e8-9764-035e044f315e.jpg">
-<meta property="og:updated_time" content="2018-06-25T14:38:20.966Z">
+<meta property="og:image" content="https://user-images.githubusercontent.com/40205791/41915143-f185fd42-798f-11e8-9d67-adfc027358ca.JPG">
+<meta property="og:updated_time" content="2018-06-26T13:28:09.316Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="XSS 방어코드작성법">
 <meta name="twitter:description" content="요새 Wargame아이디어가 생길때마다 만들고있다.Web문제를 만들던도중 게시판에서 XSS공격을 막기위해 방어할수 있는 코드를 짜려고 인터넷에 찾아보니 생각보다 자세하게 나와있지가 않았다.그래서 내가 짠코드라 완벽하지는 않지만 일단 기본적으로 &amp;lt; 를 &amp;amp;lt등으로 치환시키면 방어할 수 있기에 코드를 작성해본다. 1234567891011121314">
@@ -397,6 +398,7 @@
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">include <span class="string">"./title_filter.php"</span>;</span><br><span class="line">include <span class="string">"./text_filter.php"</span>;</span><br><span class="line"></span><br><span class="line"><span class="variable">$replace_title</span> = title_filter();</span><br><span class="line"><span class="variable">$replace_text</span> = text_filter();</span><br></pre></td></tr></table></figure>
 <p>내가 작성한 코드의 일부분이지만 XSS나 PHP를 조금만 공부한다면 다음과 같은 코드를 금방 이해할것이다.<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="variable">$query</span> = <span class="string">"insert into board(title,text,id,write_time) values('&#123;<span class="variable">$replace_title</span>&#125;','&#123;<span class="variable">$replace_text</span>&#125;','&#123;<span class="variable">$id</span>&#125;','&#123;<span class="variable">$write_time</span>&#125;')"</span>;</span><br></pre></td></tr></table></figure></p>
 <p>insert하는 부분을 보면 values에 작성해놓았던 두개의 함수 return값이 들어가는것을 볼 수 있다.<br>위처럼 작성하고 XSS공격을하게되면 XSS공격이 먹히지가 않는다.</p>
+<p><img src="https://user-images.githubusercontent.com/40205791/41915143-f185fd42-798f-11e8-9d67-adfc027358ca.JPG" alt="3"><br>글을 저장하는 테이블의 캡쳐사진을보면 &lt; 와 &gt; 가 각각치환되어있는것을 확인할수 있다.</p>
 
       
     </div>
