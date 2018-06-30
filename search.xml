@@ -3,6 +3,29 @@
   
     
     <entry>
+      <title>DOSHEADER 설명</title>
+      <link href="/2018/07/01/DOSHEADER/"/>
+      <url>/2018/07/01/DOSHEADER/</url>
+      <content type="html"><![CDATA[<div style="text-align:center"><br>PE파일란?<br>윈도우기반 운영체제에서 사용하는 실행파일 형식을 뜻하고<br>UNIX의 COFF(Common Object File Format)을 기반으로 하고 있다.<br>.exe .scr .sys .drv .dll .ocx .cpl 확장자를 가진 파일들을 PE파일이라 부르며 64비트 실행 파일은 PE32+로 표현한다.<br><br><img src="https://user-images.githubusercontent.com/40205791/42126384-db1c3ce8-7cc2-11e8-872b-288b58f4ef62.jpg" alt="noname01">PE구조를 보면 일단<br>DOS HADER, IMAGE_NT_HEADER,IMAGE_SECTION_HEADER,SECTION Body<br>이렇게 나뉘어져 있다.<br>PE구조는 각 영역별로 나뉘어져 있지만 각 영역안에 다음 영역을 가르키는 정보들이 들어있다.<br><br>DOS_HEADER를 살펴보자<br>IMAGE_DOS_HEADER 구조체에는 수많은 멤버들이 있는데 전부다 알면 좋겠지만 일단 중요한것만 작성해보면 e_magic과 e_lfanew라는 멤버가 있다.<br><br>e_magic부터 살펴보면 e_magic은 파일의 헤더를 가르키게 된다.<br>PE파일을 Hxd로 열어보면 헤더에 MZ(0x5A4D)라는 값으로 되어있는데 e_magic은 헤더인 MZ를 가르킨다.<br>e_lfanew는 IMAGE_NT_HEADER의 시작주소를 가르킨다.<br>글로만 하면 어려울수 있으니 그림으로 확인해보자.<br><br><img src="https://user-images.githubusercontent.com/40205791/42126405-34d30aa0-7cc3-11e8-9b3f-4abc2f53a10a.jpg" alt="2">그림을 보면 4D5A라는 부분이 보이는데 저게 e_magic멤버 이면서 PE헤더인 MZ를 가르키게 된다.<br><br>0xD8000000은 사람이 볼때는 0xD8000000으로 보이지만 실제 윈도우에서 해석될때에는<br>리틀엔디안 방식인 0x000000D8로 해석된다.<br>0xD8000000을 보면 0x5045000을 가르키고 있는걸 볼 수 있다 0xD8000000이 바로 e_lfanew이다.<br><br>e_lfanew는 NT_HEADER의 시작주소를 가르킨다고 위에서 설명했엇고<br>그림을 보면 0x50450000을 가르키고있는걸 볼수 있으며 저기가 바로 NT_HEADER의 시작주소이다.<br><br>간단하게 DOSHEADER를 알아보았다.<br></div>]]></content>
+      
+      <categories>
+          
+          <category> reversing </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> PE </tag>
+            
+            <tag> DOSHEADER </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>XSS 방어코드작성법</title>
       <link href="/2018/06/25/XSSdefence/"/>
       <url>/2018/06/25/XSSdefence/</url>
