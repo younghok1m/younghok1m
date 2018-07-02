@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="en">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="ch4n3,Wargame," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="Enter password to read.">
+<meta name="keywords" content="ch4n3,Wargame">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Lucky Number?(Coding)">
+<meta property="og:url" content="http://younghok1m.github.io/2018/05/26/Writeup/ch4n3/lucky/index.html">
+<meta property="og:site_name" content="Reverse">
+<meta property="og:description" content="Enter password to read.">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2018-07-02T13:24:17.272Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Lucky Number?(Coding)">
+<meta name="twitter:description" content="Enter password to read.">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://younghok1m.github.io/2018/05/26/Writeup/ch4n3/lucky/"/>
+
+
+
+
+
+  <title>Lucky Number?(Coding) | Reverse</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Reverse</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">Welcome</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            Search
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="Searching..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://younghok1m.github.io/2018/05/26/Writeup/ch4n3/lucky/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Reverse">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Reverse">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">Lucky Number?(Coding)</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-05-26T20:09:00+09:00">
+                2018-05-26
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Writeup/" itemprop="url" rel="index">
+                    <span itemprop="name">Writeup</span>
+                  </a>
+                </span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Writeup/ch4n3/" itemprop="url" rel="index">
+                    <span itemprop="name">ch4n3</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<div id="security">
+  <div class="input-container">
+  <input type="password" class="form-control" id="pass" placeholder="Enter password to read." />
+    <label for="pass">Enter password to read.</label>
+    <div class="bottom-line"></div>
+  </div>
+</div>
+<div id="decryptionError" style="display: none;">Incorrect Password!</div>
+<div id="noContentError" style="display: none;">No content to display!</div>
+<div id="encrypt-blog" style="display:none">
+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
+</div>
+<script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/ch4n3/" rel="tag"># ch4n3</a>
+          
+            <a href="/tags/Wargame/" rel="tag"># Wargame</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/03/22/Programming/C/Argument/" rel="next" title="매개변수와 인자의 차이점">
+                <i class="fa fa-chevron-left"></i> 매개변수와 인자의 차이점
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/05/27/Writeup/ch4n3/brutefore/" rel="prev" title="Brute-Force(Misc)">
+                Brute-Force(Misc) <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Reverse</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">26</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-name">categories</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Reverse</span>
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>

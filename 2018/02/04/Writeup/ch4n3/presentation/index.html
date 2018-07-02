@@ -1,0 +1,1077 @@
+<!DOCTYPE html>
+
+
+
+  
+
+
+<html class="theme-next muse use-motion" lang="en">
+<head>
+  <meta charset="UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+<meta name="theme-color" content="#222">
+
+
+
+
+
+
+
+
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+  <link href="/lib/fancybox/source/jquery.fancybox.css?v=2.1.5" rel="stylesheet" type="text/css" />
+
+
+
+
+
+
+
+<link href="/lib/font-awesome/css/font-awesome.min.css?v=4.6.2" rel="stylesheet" type="text/css" />
+
+<link href="/css/main.css?v=5.1.4" rel="stylesheet" type="text/css" />
+
+
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png?v=5.1.4">
+
+
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png?v=5.1.4">
+
+
+  <link rel="mask-icon" href="/images/logo.svg?v=5.1.4" color="#222">
+
+
+
+
+
+  <meta name="keywords" content="ch4n3,Wargame," />
+
+
+
+
+
+
+
+
+
+
+<meta name="description" content="Enter password to read.">
+<meta name="keywords" content="ch4n3,Wargame">
+<meta property="og:type" content="article">
+<meta property="og:title" content="발표자료가 안열려..(Forensic)">
+<meta property="og:url" content="http://younghok1m.github.io/2018/02/04/Writeup/ch4n3/presentation/index.html">
+<meta property="og:site_name" content="Reverse">
+<meta property="og:description" content="Enter password to read.">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2018-07-02T13:22:43.157Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="발표자료가 안열려..(Forensic)">
+<meta name="twitter:description" content="Enter password to read.">
+
+
+
+<script type="text/javascript" id="hexo.configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Muse',
+    version: '5.1.4',
+    sidebar: {"position":"left","display":"post","offset":12,"b2t":false,"scrollpercent":false,"onmobile":false},
+    fancybox: true,
+    tabs: true,
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    duoshuo: {
+      userId: '0',
+      author: 'Author'
+    },
+    algolia: {
+      applicationID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    }
+  };
+</script>
+
+
+
+  <link rel="canonical" href="http://younghok1m.github.io/2018/02/04/Writeup/ch4n3/presentation/"/>
+
+
+
+
+
+  <title>발표자료가 안열려..(Forensic) | Reverse</title>
+  
+
+
+
+
+
+
+
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage" lang="en">
+
+  
+  
+    
+  
+
+  <div class="container sidebar-position-left page-post-detail">
+    <div class="headband"></div>
+
+    <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-wrapper">
+  <div class="site-meta ">
+    
+
+    <div class="custom-logo-site-title">
+      <a href="/"  class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">Reverse</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+      
+        <p class="site-subtitle">Welcome</p>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <button>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+      <span class="btn-bar"></span>
+    </button>
+  </div>
+</div>
+
+<nav class="site-nav">
+  
+
+  
+    <ul id="menu" class="menu">
+      
+        
+        <li class="menu-item menu-item-home">
+          <a href="/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-home"></i> <br />
+            
+            Home
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-tags">
+          <a href="/tags" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-tags"></i> <br />
+            
+            Tags
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-categories">
+          <a href="/categories" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-th"></i> <br />
+            
+            Categories
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-archives">
+          <a href="/archives/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-archive"></i> <br />
+            
+            Archives
+          </a>
+        </li>
+      
+
+      
+        <li class="menu-item menu-item-search">
+          
+            <a href="javascript:;" class="popup-trigger">
+          
+            
+              <i class="menu-item-icon fa fa-search fa-fw"></i> <br />
+            
+            Search
+          </a>
+        </li>
+      
+    </ul>
+  
+
+  
+    <div class="site-search">
+      
+  <div class="popup search-popup local-search-popup">
+  <div class="local-search-header clearfix">
+    <span class="search-icon">
+      <i class="fa fa-search"></i>
+    </span>
+    <span class="popup-btn-close">
+      <i class="fa fa-times-circle"></i>
+    </span>
+    <div class="local-search-input-wrapper">
+      <input autocomplete="off"
+             placeholder="Searching..." spellcheck="false"
+             type="text" id="local-search-input">
+    </div>
+  </div>
+  <div id="local-search-result"></div>
+</div>
+
+
+
+    </div>
+  
+</nav>
+
+
+
+ </div>
+    </header>
+
+    <main id="main" class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          <div id="content" class="content">
+            
+
+  <div id="posts" class="posts-expand">
+    
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://younghok1m.github.io/2018/02/04/Writeup/ch4n3/presentation/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Reverse">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Reverse">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">발표자료가 안열려..(Forensic)</h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-02-04T14:26:00+09:00">
+                2018-02-04
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Writeup/" itemprop="url" rel="index">
+                    <span itemprop="name">Writeup</span>
+                  </a>
+                </span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Writeup/ch4n3/" itemprop="url" rel="index">
+                    <span itemprop="name">ch4n3</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
+<div id="security">
+  <div class="input-container">
+  <input type="password" class="form-control" id="pass" placeholder="Enter password to read." />
+    <label for="pass">Enter password to read.</label>
+    <div class="bottom-line"></div>
+  </div>
+</div>
+<div id="decryptionError" style="display: none;">Incorrect Password!</div>
+<div id="noContentError" style="display: none;">No content to display!</div>
+<div id="encrypt-blog" style="display:none">
+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
+</div>
+<script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/ch4n3/" rel="tag"># ch4n3</a>
+          
+            <a href="/tags/Wargame/" rel="tag"># Wargame</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/12/23/Writeup/ch4n3/mailbox/" rel="next" title="Mailbox(Web)">
+                <i class="fa fa-chevron-left"></i> Mailbox(Web)
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2018/03/10/Programming/php/php7/" rel="prev" title="php7 에서 mysql 데이터 가져오기">
+                php7 에서 mysql 데이터 가져오기 <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
+
+
+          </div>
+          
+
+
+          
+
+  
+
+
+
+        </div>
+        
+          
+  
+  <div class="sidebar-toggle">
+    <div class="sidebar-toggle-line-wrap">
+      <span class="sidebar-toggle-line sidebar-toggle-line-first"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-middle"></span>
+      <span class="sidebar-toggle-line sidebar-toggle-line-last"></span>
+    </div>
+  </div>
+
+  <aside id="sidebar" class="sidebar">
+    
+    <div class="sidebar-inner">
+
+      
+
+      
+
+      <section class="site-overview-wrap sidebar-panel sidebar-panel-active">
+        <div class="site-overview">
+          <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+            
+              <p class="site-author-name" itemprop="name">Reverse</p>
+              <p class="site-description motion-element" itemprop="description"></p>
+          </div>
+
+          <nav class="site-state motion-element">
+
+            
+              <div class="site-state-item site-state-posts">
+              
+                <a href="/archives/">
+              
+                  <span class="site-state-item-count">26</span>
+                  <span class="site-state-item-name">posts</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-categories">
+                <a href="/categories/index.html">
+                  <span class="site-state-item-count">7</span>
+                  <span class="site-state-item-name">categories</span>
+                </a>
+              </div>
+            
+
+            
+              
+              
+              <div class="site-state-item site-state-tags">
+                <a href="/tags/index.html">
+                  <span class="site-state-item-count">8</span>
+                  <span class="site-state-item-name">tags</span>
+                </a>
+              </div>
+            
+
+          </nav>
+
+          
+
+          
+
+          
+          
+
+          
+          
+
+          
+
+        </div>
+      </section>
+
+      
+
+      
+
+    </div>
+  </aside>
+
+
+        
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="footer-inner">
+        <div class="copyright">&copy; <span itemprop="copyrightYear">2018</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">Reverse</span>
+
+  
+</div>
+
+
+  <div class="powered-by">Powered by <a class="theme-link" target="_blank" href="https://hexo.io">Hexo</a></div>
+
+
+
+  <span class="post-meta-divider">|</span>
+
+
+
+  <div class="theme-info">Theme &mdash; <a class="theme-link" target="_blank" href="https://github.com/iissnan/hexo-theme-next">NexT.Muse</a> v5.1.4</div>
+
+
+
+
+        
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+
+    
+      <div class="back-to-top">
+        <i class="fa fa-arrow-up"></i>
+        
+      </div>
+    
+
+    
+
+  </div>
+
+  
+
+<script type="text/javascript">
+  if (Object.prototype.toString.call(window.Promise) !== '[object Function]') {
+    window.Promise = null;
+  }
+</script>
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery/index.js?v=2.1.3"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fastclick/lib/fastclick.min.js?v=1.0.6"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/jquery_lazyload/jquery.lazyload.js?v=1.9.7"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+  
+
+  
+  
+    <script type="text/javascript" src="/lib/fancybox/source/jquery.fancybox.pack.js?v=2.1.5"></script>
+  
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/utils.js?v=5.1.4"></script>
+
+  <script type="text/javascript" src="/js/src/motion.js?v=5.1.4"></script>
+
+
+
+  
+  
+
+  
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  <script type="text/javascript" src="/js/src/bootstrap.js?v=5.1.4"></script>
+
+
+
+  
+
+
+  
+
+
+
+
+	
+
+
+
+
+
+  
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <script type="text/javascript">
+    // Popup Window;
+    var isfetched = false;
+    var isXml = true;
+    // Search DB path;
+    var search_path = "search.xml";
+    if (search_path.length === 0) {
+      search_path = "search.xml";
+    } else if (/json$/i.test(search_path)) {
+      isXml = false;
+    }
+    var path = "/" + search_path;
+    // monitor main search box;
+
+    var onPopupClose = function (e) {
+      $('.popup').hide();
+      $('#local-search-input').val('');
+      $('.search-result-list').remove();
+      $('#no-result').remove();
+      $(".local-search-pop-overlay").remove();
+      $('body').css('overflow', '');
+    }
+
+    function proceedsearch() {
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay"></div>')
+        .css('overflow', 'hidden');
+      $('.search-popup-overlay').click(onPopupClose);
+      $('.popup').toggle();
+      var $localSearchInput = $('#local-search-input');
+      $localSearchInput.attr("autocapitalize", "none");
+      $localSearchInput.attr("autocorrect", "off");
+      $localSearchInput.focus();
+    }
+
+    // search function;
+    var searchFunc = function(path, search_id, content_id) {
+      'use strict';
+
+      // start loading animation
+      $("body")
+        .append('<div class="search-popup-overlay local-search-pop-overlay">' +
+          '<div id="search-loading-icon">' +
+          '<i class="fa fa-spinner fa-pulse fa-5x fa-fw"></i>' +
+          '</div>' +
+          '</div>')
+        .css('overflow', 'hidden');
+      $("#search-loading-icon").css('margin', '20% auto 0 auto').css('text-align', 'center');
+
+      $.ajax({
+        url: path,
+        dataType: isXml ? "xml" : "json",
+        async: true,
+        success: function(res) {
+          // get the contents from search data
+          isfetched = true;
+          $('.popup').detach().appendTo('.header-inner');
+          var datas = isXml ? $("entry", res).map(function() {
+            return {
+              title: $("title", this).text(),
+              content: $("content",this).text(),
+              url: $("url" , this).text()
+            };
+          }).get() : res;
+          var input = document.getElementById(search_id);
+          var resultContent = document.getElementById(content_id);
+          var inputEventFunction = function() {
+            var searchText = input.value.trim().toLowerCase();
+            var keywords = searchText.split(/[\s\-]+/);
+            if (keywords.length > 1) {
+              keywords.push(searchText);
+            }
+            var resultItems = [];
+            if (searchText.length > 0) {
+              // perform local searching
+              datas.forEach(function(data) {
+                var isMatch = false;
+                var hitCount = 0;
+                var searchTextCount = 0;
+                var title = data.title.trim();
+                var titleInLowerCase = title.toLowerCase();
+                var content = data.content.trim().replace(/<[^>]+>/g,"");
+                var contentInLowerCase = content.toLowerCase();
+                var articleUrl = decodeURIComponent(data.url);
+                var indexOfTitle = [];
+                var indexOfContent = [];
+                // only match articles with not empty titles
+                if(title != '') {
+                  keywords.forEach(function(keyword) {
+                    function getIndexByWord(word, text, caseSensitive) {
+                      var wordLen = word.length;
+                      if (wordLen === 0) {
+                        return [];
+                      }
+                      var startPosition = 0, position = [], index = [];
+                      if (!caseSensitive) {
+                        text = text.toLowerCase();
+                        word = word.toLowerCase();
+                      }
+                      while ((position = text.indexOf(word, startPosition)) > -1) {
+                        index.push({position: position, word: word});
+                        startPosition = position + wordLen;
+                      }
+                      return index;
+                    }
+
+                    indexOfTitle = indexOfTitle.concat(getIndexByWord(keyword, titleInLowerCase, false));
+                    indexOfContent = indexOfContent.concat(getIndexByWord(keyword, contentInLowerCase, false));
+                  });
+                  if (indexOfTitle.length > 0 || indexOfContent.length > 0) {
+                    isMatch = true;
+                    hitCount = indexOfTitle.length + indexOfContent.length;
+                  }
+                }
+
+                // show search results
+
+                if (isMatch) {
+                  // sort index by position of keyword
+
+                  [indexOfTitle, indexOfContent].forEach(function (index) {
+                    index.sort(function (itemLeft, itemRight) {
+                      if (itemRight.position !== itemLeft.position) {
+                        return itemRight.position - itemLeft.position;
+                      } else {
+                        return itemLeft.word.length - itemRight.word.length;
+                      }
+                    });
+                  });
+
+                  // merge hits into slices
+
+                  function mergeIntoSlice(text, start, end, index) {
+                    var item = index[index.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    var hits = [];
+                    var searchTextCountInSlice = 0;
+                    while (position + word.length <= end && index.length != 0) {
+                      if (word === searchText) {
+                        searchTextCountInSlice++;
+                      }
+                      hits.push({position: position, length: word.length});
+                      var wordEnd = position + word.length;
+
+                      // move to next position of hit
+
+                      index.pop();
+                      while (index.length != 0) {
+                        item = index[index.length - 1];
+                        position = item.position;
+                        word = item.word;
+                        if (wordEnd > position) {
+                          index.pop();
+                        } else {
+                          break;
+                        }
+                      }
+                    }
+                    searchTextCount += searchTextCountInSlice;
+                    return {
+                      hits: hits,
+                      start: start,
+                      end: end,
+                      searchTextCount: searchTextCountInSlice
+                    };
+                  }
+
+                  var slicesOfTitle = [];
+                  if (indexOfTitle.length != 0) {
+                    slicesOfTitle.push(mergeIntoSlice(title, 0, title.length, indexOfTitle));
+                  }
+
+                  var slicesOfContent = [];
+                  while (indexOfContent.length != 0) {
+                    var item = indexOfContent[indexOfContent.length - 1];
+                    var position = item.position;
+                    var word = item.word;
+                    // cut out 100 characters
+                    var start = position - 20;
+                    var end = position + 80;
+                    if(start < 0){
+                      start = 0;
+                    }
+                    if (end < position + word.length) {
+                      end = position + word.length;
+                    }
+                    if(end > content.length){
+                      end = content.length;
+                    }
+                    slicesOfContent.push(mergeIntoSlice(content, start, end, indexOfContent));
+                  }
+
+                  // sort slices in content by search text's count and hits' count
+
+                  slicesOfContent.sort(function (sliceLeft, sliceRight) {
+                    if (sliceLeft.searchTextCount !== sliceRight.searchTextCount) {
+                      return sliceRight.searchTextCount - sliceLeft.searchTextCount;
+                    } else if (sliceLeft.hits.length !== sliceRight.hits.length) {
+                      return sliceRight.hits.length - sliceLeft.hits.length;
+                    } else {
+                      return sliceLeft.start - sliceRight.start;
+                    }
+                  });
+
+                  // select top N slices in content
+
+                  var upperBound = parseInt('1');
+                  if (upperBound >= 0) {
+                    slicesOfContent = slicesOfContent.slice(0, upperBound);
+                  }
+
+                  // highlight title and content
+
+                  function highlightKeyword(text, slice) {
+                    var result = '';
+                    var prevEnd = slice.start;
+                    slice.hits.forEach(function (hit) {
+                      result += text.substring(prevEnd, hit.position);
+                      var end = hit.position + hit.length;
+                      result += '<b class="search-keyword">' + text.substring(hit.position, end) + '</b>';
+                      prevEnd = end;
+                    });
+                    result += text.substring(prevEnd, slice.end);
+                    return result;
+                  }
+
+                  var resultItem = '';
+
+                  if (slicesOfTitle.length != 0) {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + highlightKeyword(title, slicesOfTitle[0]) + "</a>";
+                  } else {
+                    resultItem += "<li><a href='" + articleUrl + "' class='search-result-title'>" + title + "</a>";
+                  }
+
+                  slicesOfContent.forEach(function (slice) {
+                    resultItem += "<a href='" + articleUrl + "'>" +
+                      "<p class=\"search-result\">" + highlightKeyword(content, slice) +
+                      "...</p>" + "</a>";
+                  });
+
+                  resultItem += "</li>";
+                  resultItems.push({
+                    item: resultItem,
+                    searchTextCount: searchTextCount,
+                    hitCount: hitCount,
+                    id: resultItems.length
+                  });
+                }
+              })
+            };
+            if (keywords.length === 1 && keywords[0] === "") {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-search fa-5x" /></div>'
+            } else if (resultItems.length === 0) {
+              resultContent.innerHTML = '<div id="no-result"><i class="fa fa-frown-o fa-5x" /></div>'
+            } else {
+              resultItems.sort(function (resultLeft, resultRight) {
+                if (resultLeft.searchTextCount !== resultRight.searchTextCount) {
+                  return resultRight.searchTextCount - resultLeft.searchTextCount;
+                } else if (resultLeft.hitCount !== resultRight.hitCount) {
+                  return resultRight.hitCount - resultLeft.hitCount;
+                } else {
+                  return resultRight.id - resultLeft.id;
+                }
+              });
+              var searchResultList = '<ul class=\"search-result-list\">';
+              resultItems.forEach(function (result) {
+                searchResultList += result.item;
+              })
+              searchResultList += "</ul>";
+              resultContent.innerHTML = searchResultList;
+            }
+          }
+
+          if ('auto' === 'auto') {
+            input.addEventListener('input', inputEventFunction);
+          } else {
+            $('.search-icon').click(inputEventFunction);
+            input.addEventListener('keypress', function (event) {
+              if (event.keyCode === 13) {
+                inputEventFunction();
+              }
+            });
+          }
+
+          // remove loading animation
+          $(".local-search-pop-overlay").remove();
+          $('body').css('overflow', '');
+
+          proceedsearch();
+        }
+      });
+    }
+
+    // handle and trigger popup window;
+    $('.popup-trigger').click(function(e) {
+      e.stopPropagation();
+      if (isfetched === false) {
+        searchFunc(path, 'local-search-input', 'local-search-result');
+      } else {
+        proceedsearch();
+      };
+    });
+
+    $('.popup-btn-close').click(onPopupClose);
+    $('.popup').click(function(e){
+      e.stopPropagation();
+    });
+    $(document).on('keyup', function (event) {
+      var shouldDismissSearchPopup = event.which === 27 &&
+        $('.search-popup').is(':visible');
+      if (shouldDismissSearchPopup) {
+        onPopupClose();
+      }
+    });
+  </script>
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+  
+
+  
+
+</body>
+</html>
