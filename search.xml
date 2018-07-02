@@ -645,6 +645,56 @@
     </entry>
     
     <entry>
+      <title>drakelf</title>
+      <link href="/2017/11/29/Writeup/los/darkelf/"/>
+      <url>/2017/11/29/Writeup/los/darkelf/</url>
+      <content type="html"><![CDATA[<div style="text-align:center"><br><strong>drakelf</strong><br><p><br><img src="https://user-images.githubusercontent.com/40205791/42170874-b207c48a-7e52-11e8-8828-3b55a8d6eeeb.jpg" alt="1"><br>필터링에 특별한건 없는데 or이랑 and를 필터링 하고 있꼬 저거만 우회하면 될 것같다.<br>id는 admin일 때 풀린다고한다. wolfman때 썻던 페이로드 가져와서 그냥 쓰면 풀린다.<br>or 이 필터링이면 ||를 쓰면되고 and가 필터링이면 &amp;&amp;를 쓰면되는데 웹에서 &amp;&amp;를 쓰려면 %26%26붙여서 표현하면 &amp;&amp;가된다.<br>SQL injection or bypass 이런식으로 검색하면 좋은 자료들 많이나오니까 참고하면된다.<br><img src="https://user-images.githubusercontent.com/40205791/42170875-b2495ee0-7e52-11e8-8da3-783dde2072fa.jpg" alt="2"><br>Clear<br></p></div>]]></content>
+      
+      <categories>
+          
+          <category> Writeup </category>
+          
+          <category> Load of SQL injection </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Wargame </tag>
+            
+            <tag> los </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
+      <title>wolfman</title>
+      <link href="/2017/11/29/Writeup/los/wolfman/"/>
+      <url>/2017/11/29/Writeup/los/wolfman/</url>
+      <content type="html"><![CDATA[<div style="text-align:center"><br><strong>wolfman</strong><br><p><br><img src="https://user-images.githubusercontent.com/40205791/42170726-4fa827e4-7e52-11e8-8cc9-1d83b3fba760.jpg" alt="1"><br>일단 필터링은 별거없는데 공백을 필터링하고 있다.<br>id가 admin일 때 풀린다고한다.<br><img src="https://user-images.githubusercontent.com/40205791/42170728-4feb3b10-7e52-11e8-9c5f-3bf2deccf5cd.jpg" alt="2"><br>pw값을 주지않고 or연산자로 뒤에 id값 나오게해서 풀었다.<br></p></div>]]></content>
+      
+      <categories>
+          
+          <category> Writeup </category>
+          
+          <category> Load of SQL injection </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Wargame </tag>
+            
+            <tag> los </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>orc</title>
       <link href="/2017/11/28/Writeup/los/orc/"/>
       <url>/2017/11/28/Writeup/los/orc/</url>
