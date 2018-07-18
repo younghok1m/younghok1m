@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Wargame,ch4n3," />
+  <meta name="keywords" content="reversing,Wargame," />
 
 
 
@@ -79,18 +79,27 @@
 
 
 
-<meta name="description" content="Enter password to read.">
-<meta name="keywords" content="Wargame,ch4n3">
+<meta name="description" content="basic01HDD를 CD-Rom으로 인식시키기 위해서는 GetDriveTypeA의 리턴값이 무엇인지 찾아야하는 문제이다.일단 어셈을 보게되면 별로 길지가 않다.진짜 딱봐도 cmp eax,esi 이부분을 보게되면 eax와 esi를 비교를 하게된다.그후 je 라고 나와있는데 je는 어셈에서 두 값이 같을 경우 점프를 하게된다 즉 eax와 esi가 같은경우에">
+<meta name="keywords" content="reversing,Wargame">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Array String(Web)">
-<meta property="og:url" content="http://younghok1m.github.io/2017/12/14/Writeup/ch4n3/arraystring/index.html">
+<meta property="og:title" content="basic01">
+<meta property="og:url" content="http://younghok1m.github.io/2018/07/18/Writeup/codeengn/basic01/index.html">
 <meta property="og:site_name" content="Mode5ty">
-<meta property="og:description" content="Enter password to read.">
+<meta property="og:description" content="basic01HDD를 CD-Rom으로 인식시키기 위해서는 GetDriveTypeA의 리턴값이 무엇인지 찾아야하는 문제이다.일단 어셈을 보게되면 별로 길지가 않다.진짜 딱봐도 cmp eax,esi 이부분을 보게되면 eax와 esi를 비교를 하게된다.그후 je 라고 나와있는데 je는 어셈에서 두 값이 같을 경우 점프를 하게된다 즉 eax와 esi가 같은경우에">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2018-07-02T13:23:32.089Z">
+<meta property="og:image" content="https://user-images.githubusercontent.com/40205791/42888594-8b8fa212-8ae3-11e8-8533-aeaa880ca844.JPG">
+<meta property="og:image" content="https://user-images.githubusercontent.com/40205791/42888595-8bd4d5e4-8ae3-11e8-9d8d-6800270a1dc9.jpg">
+<meta property="og:image" content="https://user-images.githubusercontent.com/40205791/42888596-8c169da8-8ae3-11e8-918d-5037c06f80d9.jpg">
+<meta property="og:image" content="https://user-images.githubusercontent.com/40205791/42888597-8c566b04-8ae3-11e8-916d-8f2ffca0e163.jpg">
+<meta property="og:image" content="https://user-images.githubusercontent.com/40205791/42888599-8cbef340-8ae3-11e8-9ca6-7a2775e2c0ab.jpg">
+<meta property="og:image" content="https://user-images.githubusercontent.com/40205791/42888600-8cffe314-8ae3-11e8-9a53-3d9d2f264490.jpg">
+<meta property="og:image" content="https://user-images.githubusercontent.com/40205791/42888604-8d554804-8ae3-11e8-97aa-70232506894c.jpg">
+<meta property="og:image" content="https://user-images.githubusercontent.com/40205791/42888605-8d97c7a6-8ae3-11e8-8880-741a48438c1b.jpg">
+<meta property="og:updated_time" content="2018-07-18T14:40:01.440Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Array String(Web)">
-<meta name="twitter:description" content="Enter password to read.">
+<meta name="twitter:title" content="basic01">
+<meta name="twitter:description" content="basic01HDD를 CD-Rom으로 인식시키기 위해서는 GetDriveTypeA의 리턴값이 무엇인지 찾아야하는 문제이다.일단 어셈을 보게되면 별로 길지가 않다.진짜 딱봐도 cmp eax,esi 이부분을 보게되면 eax와 esi를 비교를 하게된다.그후 je 라고 나와있는데 je는 어셈에서 두 값이 같을 경우 점프를 하게된다 즉 eax와 esi가 같은경우에">
+<meta name="twitter:image" content="https://user-images.githubusercontent.com/40205791/42888594-8b8fa212-8ae3-11e8-8533-aeaa880ca844.JPG">
 
 
 
@@ -120,13 +129,13 @@
 
 
 
-  <link rel="canonical" href="http://younghok1m.github.io/2017/12/14/Writeup/ch4n3/arraystring/"/>
+  <link rel="canonical" href="http://younghok1m.github.io/2018/07/18/Writeup/codeengn/basic01/"/>
 
 
 
 
 
-  <title>Array String(Web) | Mode5ty</title>
+  <title>basic01 | Mode5ty</title>
   
 
 
@@ -287,7 +296,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://younghok1m.github.io/2017/12/14/Writeup/ch4n3/arraystring/">
+    <link itemprop="mainEntityOfPage" href="http://younghok1m.github.io/2018/07/18/Writeup/codeengn/basic01/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Reverse">
@@ -304,7 +313,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Array String(Web)</h1>
+          <h1 class="post-title" itemprop="name headline">basic01</h1>
         
 
         <div class="post-meta">
@@ -316,8 +325,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-12-14T23:01:00+09:00">
-                2017-12-14
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-07-18T23:15:00+09:00">
+                2018-07-18
               </time>
             
 
@@ -350,8 +359,8 @@
                 
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Writeup/ch4n3/" itemprop="url" rel="index">
-                    <span itemprop="name">ch4n3</span>
+                  <a href="/categories/Writeup/codeengn/" itemprop="url" rel="index">
+                    <span itemprop="name">codeengn</span>
                   </a>
                 </span>
 
@@ -388,20 +397,9 @@
       
 
       
-        <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
-<div id="security">
-  <div class="input-container">
-  <input type="password" class="form-control" id="pass" placeholder="Enter password to read." />
-    <label for="pass">Enter password to read.</label>
-    <div class="bottom-line"></div>
-  </div>
-</div>
-<div id="decryptionError" style="display: none;">Incorrect Password!</div>
-<div id="noContentError" style="display: none;">No content to display!</div>
-<div id="encrypt-blog" style="display:none">
-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
-</div>
-<script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">
+        <div style="text-align:center"><br><strong>basic01</strong><br><p><br><img src="https://user-images.githubusercontent.com/40205791/42888594-8b8fa212-8ae3-11e8-8533-aeaa880ca844.JPG" alt="1"><br>HDD를 CD-Rom으로 인식시키기 위해서는 GetDriveTypeA의 리턴값이 무엇인지 찾아야하는 문제이다.<br><img src="https://user-images.githubusercontent.com/40205791/42888595-8bd4d5e4-8ae3-11e8-9d8d-6800270a1dc9.jpg" alt="2"><br>일단 어셈을 보게되면 별로 길지가 않다.<br>진짜 딱봐도 cmp eax,esi 이부분을 보게되면 eax와 esi를 비교를 하게된다.<br>그후 je 라고 나와있는데 je는 어셈에서 두 값이 같을 경우 점프를 하게된다 즉 eax와 esi가 같은경우에 40103D주소로 점프하여 문제가 풀리는 구조이다.<br><img src="https://user-images.githubusercontent.com/40205791/42888596-8c169da8-8ae3-11e8-918d-5037c06f80d9.jpg" alt="3"><br>GetDriveTypeA함수를 call하고 난후 EAX값이 3으로 셋팅되었다.<br>EAX에는 함수의 리턴값이 저장된다 이말은 즉 GetDriveTypeA함수의 리턴값이 3이라는 말이다.<br>그 밑에 inc와 dec가 있지만 문제 의도인지 컴파일러에서 일부러 저렇게 한지는 모르겠지만 자꾸 eax와 esi의 값을 증가 감소 시키고 그후 cmp(비교)를 하게된다.<br><img src="https://user-images.githubusercontent.com/40205791/42888597-8c566b04-8ae3-11e8-916d-8f2ffca0e163.jpg" alt="4"><br>cmp에서 eax와 esi를 비교하는데 중요한건 현재 eax는1 esi는3의 값을 가지고 있다.<br>일단 현재 상태에서 실행시키게되면 두값이 같지 않으니 Nah… This is not a CD-ROM Drive! 라는 문구가 출력될 것이다.<br><img src="https://user-images.githubusercontent.com/40205791/42888599-8cbef340-8ae3-11e8-9ca6-7a2775e2c0ab.jpg" alt="5"><br>예상대로 Nah… This is not a CD-ROM Drive!가 뜬다.<br>eax와 esi가 각각 다른값을 가지고있는데 어떻게 풀지라고 생각하다가 EAX값을 바꿔주면 되겠구나 라는 생각이 들어서 어셈을 다시한번 보았다.<br><img src="https://user-images.githubusercontent.com/40205791/42888600-8cffe314-8ae3-11e8-9a53-3d9d2f264490.jpg" alt="6"><br>어셈을 보면 GetDriveTypeA함수를 call한후 eax리턴값은 3이였다.<br>근데 그후 dec를 두 번 하고 있다.<br>dec는 값을 1만큼 감소하는 어셈언어이다.<br>그럼 GetDriveTypeA함수를 call한후 eax리턴값을 5로 만들어주면 2번의 dec를 하더라도<br>3이되기 때문에 문제를 풀수있을 것이다.<br>물론 esi를 바꿔도 풀수있을것인데 그냥 편의상 eax로 문제를 풀었다.<br><img src="https://user-images.githubusercontent.com/40205791/42888604-8d554804-8ae3-11e8-97aa-70232506894c.jpg" alt="7"><br>EAX를 5로 바꿔주고 쭉 실행을 하게되면<br><img src="https://user-images.githubusercontent.com/40205791/42888605-8d97c7a6-8ae3-11e8-8880-741a48438c1b.jpg" alt="8"><br>문제가 풀린다.<br>문제에서 원한 값은 GetDriveTypeA함수의 리턴값이 무엇이 되어야하는가 라고 했기에<br>정답은 5이다.<br>방금 위에서 esi값을 변경해도 풀수있다고 적었지만 지문에서 원하는 GetDriveTypeA함수의 리턴값은 EAX에 저장되어있기 때문에 EAX값으로 문제를 풀었어야한다.<br></p></div>
+
+
       
     </div>
     
@@ -418,9 +416,9 @@ U2FsdGVkX19JECgMbkgzMe3s2692pX5knYix1wU+l8+V604AVEvErGjUOoHWFYMogpZmEuBVGBgTzwPr
       
         <div class="post-tags">
           
-            <a href="/tags/Wargame/" rel="tag"># Wargame</a>
+            <a href="/tags/reversing/" rel="tag"># reversing</a>
           
-            <a href="/tags/ch4n3/" rel="tag"># ch4n3</a>
+            <a href="/tags/Wargame/" rel="tag"># Wargame</a>
           
         </div>
       
@@ -433,8 +431,8 @@ U2FsdGVkX19JECgMbkgzMe3s2692pX5knYix1wU+l8+V604AVEvErGjUOoHWFYMogpZmEuBVGBgTzwPr
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/12/14/Writeup/ch4n3/Autobike/" rel="next" title="Auto bike challenge(Web)">
-                <i class="fa fa-chevron-left"></i> Auto bike challenge(Web)
+              <a href="/2018/07/01/reversing/DOSHEADER/" rel="next" title="DOSHEADER 설명">
+                <i class="fa fa-chevron-left"></i> DOSHEADER 설명
               </a>
             
           </div>
@@ -442,10 +440,6 @@ U2FsdGVkX19JECgMbkgzMe3s2692pX5knYix1wU+l8+V604AVEvErGjUOoHWFYMogpZmEuBVGBgTzwPr
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/12/22/Writeup/ch4n3/this/" rel="prev" title="아니..이것은??(Crypto)">
-                아니..이것은??(Crypto) <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>

@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Wargame,ch4n3," />
+  <meta name="keywords" content="Hexo, NexT" />
 
 
 
@@ -79,18 +79,13 @@
 
 
 
-<meta name="description" content="Enter password to read.">
-<meta name="keywords" content="Wargame,ch4n3">
-<meta property="og:type" content="article">
-<meta property="og:title" content="Array String(Web)">
-<meta property="og:url" content="http://younghok1m.github.io/2017/12/14/Writeup/ch4n3/arraystring/index.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Mode5ty">
+<meta property="og:url" content="http://younghok1m.github.io/tags/reversing/index.html">
 <meta property="og:site_name" content="Mode5ty">
-<meta property="og:description" content="Enter password to read.">
 <meta property="og:locale" content="en">
-<meta property="og:updated_time" content="2018-07-02T13:23:32.089Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Array String(Web)">
-<meta name="twitter:description" content="Enter password to read.">
+<meta name="twitter:title" content="Mode5ty">
 
 
 
@@ -120,13 +115,13 @@
 
 
 
-  <link rel="canonical" href="http://younghok1m.github.io/2017/12/14/Writeup/ch4n3/arraystring/"/>
+  <link rel="canonical" href="http://younghok1m.github.io/tags/reversing/"/>
 
 
 
 
 
-  <title>Array String(Web) | Mode5ty</title>
+  <title>Tag: reversing | Mode5ty</title>
   
 
 
@@ -145,7 +140,7 @@
     
   
 
-  <div class="container sidebar-position-left page-post-detail">
+  <div class="container sidebar-position-left ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -273,227 +268,54 @@
           <div id="content" class="content">
             
 
-  <div id="posts" class="posts-expand">
-    
+  
+  
+  
+  <div class="post-block tag">
 
-  
+    <div id="posts" class="posts-collapse">
+      <div class="collection-title">
+        <h1>reversing<small>Tag</small>
+        </h1>
+      </div>
 
-  
-  
-  
+      
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://younghok1m.github.io/2017/12/14/Writeup/ch4n3/arraystring/">
+    <header class="post-header">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Reverse">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Mode5ty">
-    </span>
-
-    
-      <header class="post-header">
-
+      <h2 class="post-title">
         
+            <a class="post-title-link" href="/2018/07/18/Writeup/codeengn/basic01/" itemprop="url">
+              
+                <span itemprop="name">basic01</span>
+              
+            </a>
         
-          <h1 class="post-title" itemprop="name headline">Array String(Web)</h1>
-        
+      </h2>
 
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">Posted on</span>
-              
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-12-14T23:01:00+09:00">
-                2017-12-14
-              </time>
-            
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2018-07-18T23:15:00+09:00"
+              content="2018-07-18" >
+          07-18
+        </time>
+      </div>
 
-            
-
-            
-          </span>
-
-          
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">In</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Writeup/" itemprop="url" rel="index">
-                    <span itemprop="name">Writeup</span>
-                  </a>
-                </span>
-
-                
-                
-                  , 
-                
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Writeup/ch4n3/" itemprop="url" rel="index">
-                    <span itemprop="name">ch4n3</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
-          
-
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        <script src="//cdn.bootcss.com/jquery/1.11.3/jquery.min.js"></script>
-<div id="security">
-  <div class="input-container">
-  <input type="password" class="form-control" id="pass" placeholder="Enter password to read." />
-    <label for="pass">Enter password to read.</label>
-    <div class="bottom-line"></div>
-  </div>
-</div>
-<div id="decryptionError" style="display: none;">Incorrect Password!</div>
-<div id="noContentError" style="display: none;">No content to display!</div>
-<div id="encrypt-blog" style="display:none">
-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
-</div>
-<script src="/lib/crypto-js.js"></script><script src="/lib/blog-encrypt.js"></script><link href="/css/blog-encrypt.css" rel="stylesheet" type="text/css">
-      
-    </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-        <div class="post-tags">
-          
-            <a href="/tags/Wargame/" rel="tag"># Wargame</a>
-          
-            <a href="/tags/ch4n3/" rel="tag"># ch4n3</a>
-          
-        </div>
-      
-
-      
-      
-      
-
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/2017/12/14/Writeup/ch4n3/Autobike/" rel="next" title="Auto bike challenge(Web)">
-                <i class="fa fa-chevron-left"></i> Auto bike challenge(Web)
-              </a>
-            
-          </div>
-
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/12/22/Writeup/ch4n3/this/" rel="prev" title="아니..이것은??(Crypto)">
-                아니..이것은??(Crypto) <i class="fa fa-chevron-right"></i>
-              </a>
-            
-          </div>
-        </div>
-      
-<!-- disqus page -->
-
-
-
-<h2> 댓글 남기기</h2>
-<div id="disqus_thread"></div>
-<script>
-
-/**
-*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-/*
-var disqus_config = function () {
-this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-};
-*/
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-s.src = 'https://younghok1m-github-io.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-
-
-
-
-      
-      
-    </footer>
-  </div>
-  
-  
-  
+    </header>
   </article>
 
 
-
-    <div class="post-spread">
       
     </div>
+
   </div>
+  
+  
+  
+
+  
 
 
           </div>
@@ -501,10 +323,6 @@ s.setAttribute('data-timestamp', +new Date());
 
 
           
-
-  
-
-
 
         </div>
         
@@ -720,10 +538,6 @@ s.setAttribute('data-timestamp', +new Date());
   
 
   
-  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
-<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
-
-
 
   
 
