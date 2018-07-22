@@ -79,13 +79,13 @@
 
 
 
-<meta name="description" content="HDD를 CD-Rom으로 인식시키기 위해서는 GetDriveTypeA의 리턴값이 무엇인지 찾아야하는 문제이다.일단 어셈을 보게되면 별로 길지가 않다.진짜 딱봐도 cmp eax,esi 이부분을 보게되면 eax와 esi를 비교를 하게된다.그후 je 라고 나와있는데 je는 어셈에서 두 값이 같을 경우 점프를 하게된다 즉 eax와 esi가 같은경우에 40103D주">
+<meta name="description" content="HDD를 CD-Rom으로 인식시키기 위해서는 GetDriveTypeA의 리턴값이 무엇인지 찾아야하는 문제이다.일단 어셈을 보게되면 별로 길지가 않다.cmp eax,esi 이부분을 보게되면 eax와 esi를 비교를 하게된다.그후 je 라고 나와있는데 je는 어셈에서 두 값이 같을 경우 점프를 하게된다 즉 eax와 esi가 같은경우에 40103D주소로 점프하여">
 <meta name="keywords" content="reversing,Wargame">
 <meta property="og:type" content="article">
 <meta property="og:title" content="basic01">
-<meta property="og:url" content="http://younghok1m.github.io/2018/07/18/Writeup/codeengn/basic01/index.html">
+<meta property="og:url" content="https://younghok1m.github.io/2018/07/18/Writeup/codeengn/basic01/index.html">
 <meta property="og:site_name" content="Mode5ty">
-<meta property="og:description" content="HDD를 CD-Rom으로 인식시키기 위해서는 GetDriveTypeA의 리턴값이 무엇인지 찾아야하는 문제이다.일단 어셈을 보게되면 별로 길지가 않다.진짜 딱봐도 cmp eax,esi 이부분을 보게되면 eax와 esi를 비교를 하게된다.그후 je 라고 나와있는데 je는 어셈에서 두 값이 같을 경우 점프를 하게된다 즉 eax와 esi가 같은경우에 40103D주">
+<meta property="og:description" content="HDD를 CD-Rom으로 인식시키기 위해서는 GetDriveTypeA의 리턴값이 무엇인지 찾아야하는 문제이다.일단 어셈을 보게되면 별로 길지가 않다.cmp eax,esi 이부분을 보게되면 eax와 esi를 비교를 하게된다.그후 je 라고 나와있는데 je는 어셈에서 두 값이 같을 경우 점프를 하게된다 즉 eax와 esi가 같은경우에 40103D주소로 점프하여">
 <meta property="og:locale" content="en">
 <meta property="og:image" content="https://user-images.githubusercontent.com/40205791/42888594-8b8fa212-8ae3-11e8-8533-aeaa880ca844.JPG">
 <meta property="og:image" content="https://user-images.githubusercontent.com/40205791/42888595-8bd4d5e4-8ae3-11e8-9d8d-6800270a1dc9.jpg">
@@ -95,10 +95,10 @@
 <meta property="og:image" content="https://user-images.githubusercontent.com/40205791/42888600-8cffe314-8ae3-11e8-9a53-3d9d2f264490.jpg">
 <meta property="og:image" content="https://user-images.githubusercontent.com/40205791/42888604-8d554804-8ae3-11e8-97aa-70232506894c.jpg">
 <meta property="og:image" content="https://user-images.githubusercontent.com/40205791/42888605-8d97c7a6-8ae3-11e8-8880-741a48438c1b.jpg">
-<meta property="og:updated_time" content="2018-07-19T01:01:59.511Z">
+<meta property="og:updated_time" content="2018-07-22T10:10:44.926Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="basic01">
-<meta name="twitter:description" content="HDD를 CD-Rom으로 인식시키기 위해서는 GetDriveTypeA의 리턴값이 무엇인지 찾아야하는 문제이다.일단 어셈을 보게되면 별로 길지가 않다.진짜 딱봐도 cmp eax,esi 이부분을 보게되면 eax와 esi를 비교를 하게된다.그후 je 라고 나와있는데 je는 어셈에서 두 값이 같을 경우 점프를 하게된다 즉 eax와 esi가 같은경우에 40103D주">
+<meta name="twitter:description" content="HDD를 CD-Rom으로 인식시키기 위해서는 GetDriveTypeA의 리턴값이 무엇인지 찾아야하는 문제이다.일단 어셈을 보게되면 별로 길지가 않다.cmp eax,esi 이부분을 보게되면 eax와 esi를 비교를 하게된다.그후 je 라고 나와있는데 je는 어셈에서 두 값이 같을 경우 점프를 하게된다 즉 eax와 esi가 같은경우에 40103D주소로 점프하여">
 <meta name="twitter:image" content="https://user-images.githubusercontent.com/40205791/42888594-8b8fa212-8ae3-11e8-8533-aeaa880ca844.JPG">
 
 
@@ -129,7 +129,7 @@
 
 
 
-  <link rel="canonical" href="http://younghok1m.github.io/2018/07/18/Writeup/codeengn/basic01/"/>
+  <link rel="canonical" href="https://younghok1m.github.io/2018/07/18/Writeup/codeengn/basic01/"/>
 
 
 
@@ -296,7 +296,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://younghok1m.github.io/2018/07/18/Writeup/codeengn/basic01/">
+    <link itemprop="mainEntityOfPage" href="https://younghok1m.github.io/2018/07/18/Writeup/codeengn/basic01/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Mode5ty">
@@ -397,7 +397,7 @@
       
 
       
-        <div style="text-align:center"><br><!-- <strong>basic01</strong> --><br><img src="https://user-images.githubusercontent.com/40205791/42888594-8b8fa212-8ae3-11e8-8533-aeaa880ca844.JPG" alt="1"><br>HDD를 CD-Rom으로 인식시키기 위해서는 GetDriveTypeA의 리턴값이 무엇인지 찾아야하는 문제이다.<br><img src="https://user-images.githubusercontent.com/40205791/42888595-8bd4d5e4-8ae3-11e8-9d8d-6800270a1dc9.jpg" alt="2"><br>일단 어셈을 보게되면 별로 길지가 않다.<br>진짜 딱봐도 cmp eax,esi 이부분을 보게되면 eax와 esi를 비교를 하게된다.<br>그후 je 라고 나와있는데 je는 어셈에서 두 값이 같을 경우 점프를 하게된다 즉 eax와 esi가 같은경우에 40103D주소로 점프하여 문제가 풀리는 구조이다.<br><img src="https://user-images.githubusercontent.com/40205791/42888596-8c169da8-8ae3-11e8-918d-5037c06f80d9.jpg" alt="3"><br>GetDriveTypeA함수를 call하고 난후 EAX값이 3으로 셋팅되었다.<br>EAX에는 함수의 리턴값이 저장된다 이말은 즉 GetDriveTypeA함수의 리턴값이 3이라는 말이다.<br>그 밑에 inc와 dec가 있지만 문제 의도인지 컴파일러에서 일부러 저렇게 한지는 모르겠지만 자꾸 eax와 esi의 값을 증가 감소 시키고 그후 cmp(비교)를 하게된다.<br><img src="https://user-images.githubusercontent.com/40205791/42888597-8c566b04-8ae3-11e8-916d-8f2ffca0e163.jpg" alt="4"><br>cmp에서 eax와 esi를 비교하는데 중요한건 현재 eax는1 esi는3의 값을 가지고 있다.<br>일단 현재 상태에서 실행시키게되면 두값이 같지 않으니 Nah… This is not a CD-ROM Drive! 라는 문구가 출력될 것이다.<br><img src="https://user-images.githubusercontent.com/40205791/42888599-8cbef340-8ae3-11e8-9ca6-7a2775e2c0ab.jpg" alt="5"><br>예상대로 Nah… This is not a CD-ROM Drive!가 뜬다.<br>eax와 esi가 각각 다른값을 가지고있는데 어떻게 풀지라고 생각하다가 EAX값을 바꿔주면 되겠구나 라는 생각이 들어서 어셈을 다시한번 보았다.<br><img src="https://user-images.githubusercontent.com/40205791/42888600-8cffe314-8ae3-11e8-9a53-3d9d2f264490.jpg" alt="6"><br>어셈을 보면 GetDriveTypeA함수를 call한후 eax리턴값은 3이였다.<br>근데 그후 dec를 두 번 하고 있다.<br>dec는 값을 1만큼 감소하는 어셈언어이다.<br>그럼 GetDriveTypeA함수를 call한후 eax리턴값을 5로 만들어주면 2번의 dec를 하더라도<br>3이되기 때문에 문제를 풀수있을 것이다.<br>물론 esi를 바꿔도 풀수있을것인데 그냥 편의상 eax로 문제를 풀었다.<br><img src="https://user-images.githubusercontent.com/40205791/42888604-8d554804-8ae3-11e8-97aa-70232506894c.jpg" alt="7"><br>EAX를 5로 바꿔주고 쭉 실행을 하게되면<br><img src="https://user-images.githubusercontent.com/40205791/42888605-8d97c7a6-8ae3-11e8-8880-741a48438c1b.jpg" alt="8"><br>문제가 풀린다.<br>문제에서 원한 값은 GetDriveTypeA함수의 리턴값이 무엇이 되어야하는가 라고 했기에<br>정답은 5이다.<br>방금 위에서 esi값을 변경해도 풀수있다고 적었지만 지문에서 원하는 GetDriveTypeA함수의 리턴값은 EAX에 저장되어있기 때문에 EAX값으로 문제를 풀었어야한다.<br></div>
+        <div style="text-align:center"><br><!-- <strong>basic01</strong> --><br><img src="https://user-images.githubusercontent.com/40205791/42888594-8b8fa212-8ae3-11e8-8533-aeaa880ca844.JPG" alt="1"><br>HDD를 CD-Rom으로 인식시키기 위해서는 GetDriveTypeA의 리턴값이 무엇인지 찾아야하는 문제이다.<br><img src="https://user-images.githubusercontent.com/40205791/42888595-8bd4d5e4-8ae3-11e8-9d8d-6800270a1dc9.jpg" alt="2"><br>일단 어셈을 보게되면 별로 길지가 않다.<br>cmp eax,esi 이부분을 보게되면 eax와 esi를 비교를 하게된다.<br>그후 je 라고 나와있는데 je는 어셈에서 두 값이 같을 경우 점프를 하게된다 즉 eax와 esi가 같은경우에 40103D주소로 점프하여 문제가 풀리는 구조이다.<br><img src="https://user-images.githubusercontent.com/40205791/42888596-8c169da8-8ae3-11e8-918d-5037c06f80d9.jpg" alt="3"><br>GetDriveTypeA함수를 call하고 난후 EAX값이 3으로 셋팅되었다.<br>EAX에는 함수의 리턴값이 저장된다 이말은 즉 GetDriveTypeA함수의 리턴값이 3이라는 말이다.<br>그 밑에 inc와 dec가 있지만 문제 의도인지 컴파일러에서 이렇게 컴파일 된건지는  모르겠지만 자꾸 eax와 esi의 값을 증가 감소 시키고 그후 cmp(비교)를 하게된다.<br><img src="https://user-images.githubusercontent.com/40205791/42888597-8c566b04-8ae3-11e8-916d-8f2ffca0e163.jpg" alt="4"><br>cmp에서 eax와 esi를 비교하는데 중요한건 현재 eax는1 esi는3의 값을 가지고 있다.<br>일단 현재 상태에서 실행시키게되면 두값이 같지 않으니 Nah… This is not a CD-ROM Drive! 라는 문구가 출력될 것이다.<br><img src="https://user-images.githubusercontent.com/40205791/42888599-8cbef340-8ae3-11e8-9ca6-7a2775e2c0ab.jpg" alt="5"><br>예상대로 Nah… This is not a CD-ROM Drive!가 뜬다.<br>eax와 esi가 각각 다른값을 가지고있는데 어떻게 풀지라고 생각하다가 EAX값을 바꿔주면 되겠구나 라는 생각이 들어서 어셈을 다시한번 보았다.<br><img src="https://user-images.githubusercontent.com/40205791/42888600-8cffe314-8ae3-11e8-9a53-3d9d2f264490.jpg" alt="6"><br>어셈을 보면 GetDriveTypeA함수를 call한후 eax리턴값은 3이였다.<br>근데 그후 dec를 두 번 하고 있다.<br>dec는 값을 1만큼 감소하는 어셈언어이다.<br>그럼 GetDriveTypeA함수를 call한후 eax리턴값을 5로 만들어주면 2번의 dec를 하더라도<br>3이되기 때문에 문제를 풀수있을 것이다.<br>물론 esi를 바꿔도 풀수있을것인데 그냥 편의상 eax로 문제를 풀었다.<br><img src="https://user-images.githubusercontent.com/40205791/42888604-8d554804-8ae3-11e8-97aa-70232506894c.jpg" alt="7"><br>EAX를 5로 바꿔주고 쭉 실행을 하게되면<br><img src="https://user-images.githubusercontent.com/40205791/42888605-8d97c7a6-8ae3-11e8-8880-741a48438c1b.jpg" alt="8"><br>문제가 풀린다.<br>문제에서 원한 값은 GetDriveTypeA함수의 리턴값이 무엇이 되어야하는가 라고 했기에<br>정답은 5이다.<br>방금 위에서 esi값을 변경해도 풀수있다고 적었지만 지문에서 원하는 GetDriveTypeA함수의 리턴값은 EAX에 저장되어있기 때문에 EAX값으로 문제를 풀었어야한다.<br></div>
 
 
       
