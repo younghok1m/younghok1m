@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Wargame,los," />
+  <meta name="keywords" content="Wargame,reversing," />
 
 
 
@@ -79,20 +79,21 @@
 
 
 
-<meta name="description" content="vampirereplace함수로 admin이라는 문자열이 들어올경우 빈칸으로 치환시키고 있다.id가 admin일경우 풀리니까 조금만 생각하면 풀수있는 문제이다.">
-<meta name="keywords" content="Wargame,los">
+<meta name="description" content="해당파일을 실행 시켯는데 실행이 되지 않아서 디버거로 열어보려고 열어봤는데 디버거로도 열리지가 않았고 hxd로 열어봤는데도 별내용은 없었다.밑에 내려보니 문자열과 함께 Password처럼 보이는 값이 있는데 저게 정답인 것 같다.">
+<meta name="keywords" content="Wargame,reversing">
 <meta property="og:type" content="article">
-<meta property="og:title" content="vampire">
-<meta property="og:url" content="http://modesty.kr/2017/11/29/Writeup/los/vampire/index.html">
+<meta property="og:title" content="basic02">
+<meta property="og:url" content="http://modesty.kr/2018/07/20/Writeup/codeengn/basic02/index.html">
 <meta property="og:site_name" content="Mode5ty">
-<meta property="og:description" content="vampirereplace함수로 admin이라는 문자열이 들어올경우 빈칸으로 치환시키고 있다.id가 admin일경우 풀리니까 조금만 생각하면 풀수있는 문제이다.">
+<meta property="og:description" content="해당파일을 실행 시켯는데 실행이 되지 않아서 디버거로 열어보려고 열어봤는데 디버거로도 열리지가 않았고 hxd로 열어봤는데도 별내용은 없었다.밑에 내려보니 문자열과 함께 Password처럼 보이는 값이 있는데 저게 정답인 것 같다.">
 <meta property="og:locale" content="en">
-<meta property="og:image" content="https://user-images.githubusercontent.com/40205791/42224048-26264618-7f14-11e8-8631-08b4c902bd7b.jpg">
-<meta property="og:updated_time" content="2018-07-03T13:56:35.484Z">
+<meta property="og:image" content="https://user-images.githubusercontent.com/40205791/43081165-5e936fae-8ecc-11e8-8e4c-4428816cdde9.jpg">
+<meta property="og:image" content="https://user-images.githubusercontent.com/40205791/43081166-5ebafcf4-8ecc-11e8-8536-f24bb51b2781.jpg">
+<meta property="og:updated_time" content="2018-07-23T14:04:10.354Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="vampire">
-<meta name="twitter:description" content="vampirereplace함수로 admin이라는 문자열이 들어올경우 빈칸으로 치환시키고 있다.id가 admin일경우 풀리니까 조금만 생각하면 풀수있는 문제이다.">
-<meta name="twitter:image" content="https://user-images.githubusercontent.com/40205791/42224048-26264618-7f14-11e8-8631-08b4c902bd7b.jpg">
+<meta name="twitter:title" content="basic02">
+<meta name="twitter:description" content="해당파일을 실행 시켯는데 실행이 되지 않아서 디버거로 열어보려고 열어봤는데 디버거로도 열리지가 않았고 hxd로 열어봤는데도 별내용은 없었다.밑에 내려보니 문자열과 함께 Password처럼 보이는 값이 있는데 저게 정답인 것 같다.">
+<meta name="twitter:image" content="https://user-images.githubusercontent.com/40205791/43081165-5e936fae-8ecc-11e8-8e4c-4428816cdde9.jpg">
 
 
 
@@ -122,13 +123,13 @@
 
 
 
-  <link rel="canonical" href="http://modesty.kr/2017/11/29/Writeup/los/vampire/"/>
+  <link rel="canonical" href="http://modesty.kr/2018/07/20/Writeup/codeengn/basic02/"/>
 
 
 
 
 
-  <title>vampire | Mode5ty</title>
+  <title>basic02 | Mode5ty</title>
   
 
 
@@ -289,7 +290,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://modesty.kr/2017/11/29/Writeup/los/vampire/">
+    <link itemprop="mainEntityOfPage" href="http://modesty.kr/2018/07/20/Writeup/codeengn/basic02/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Mode5ty">
@@ -306,7 +307,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">vampire</h1>
+          <h1 class="post-title" itemprop="name headline">basic02</h1>
         
 
         <div class="post-meta">
@@ -318,8 +319,8 @@
               
                 <span class="post-meta-item-text">Posted on</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-11-29T14:37:00+09:00">
-                2017-11-29
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-07-20T22:15:00+09:00">
+                2018-07-20
               </time>
             
 
@@ -352,8 +353,8 @@
                 
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/Writeup/Load-of-SQL-injection/" itemprop="url" rel="index">
-                    <span itemprop="name">Load of SQL injection</span>
+                  <a href="/categories/Writeup/codeengn/" itemprop="url" rel="index">
+                    <span itemprop="name">codeengn</span>
                   </a>
                 </span>
 
@@ -390,7 +391,8 @@
       
 
       
-        <div style="text-align:center"><br><strong>vampire</strong><br><p><br><img src="https://user-images.githubusercontent.com/40205791/42224048-26264618-7f14-11e8-8631-08b4c902bd7b.jpg" alt="1"><br>replace함수로 admin이라는 문자열이 들어올경우 빈칸으로 치환시키고 있다.<br>id가 admin일경우 풀리니까 조금만 생각하면 풀수있는 문제이다.<br></p></div>
+        <div style="text-align:center"><br><img src="https://user-images.githubusercontent.com/40205791/43081165-5e936fae-8ecc-11e8-8e4c-4428816cdde9.jpg" alt="1"><br>해당파일을 실행 시켯는데 실행이 되지 않아서 디버거로 열어보려고 열어봤는데 디버거로도 열리지가 않았고 hxd로 열어봤는데도 별내용은 없었다.<br><img src="https://user-images.githubusercontent.com/40205791/43081166-5ebafcf4-8ecc-11e8-8536-f24bb51b2781.jpg" alt="2"><br>밑에 내려보니 문자열과 함께 Password처럼 보이는 값이 있는데 저게 정답인 것 같다.<br></div>
+
 
       
     </div>
@@ -410,7 +412,7 @@
           
             <a href="/tags/Wargame/" rel="tag"># Wargame</a>
           
-            <a href="/tags/los/" rel="tag"># los</a>
+            <a href="/tags/reversing/" rel="tag"># reversing</a>
           
         </div>
       
@@ -423,8 +425,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/11/29/Writeup/los/troll/" rel="next" title="troll">
-                <i class="fa fa-chevron-left"></i> troll
+              <a href="/2018/07/18/Writeup/codeengn/basic01/" rel="next" title="basic01">
+                <i class="fa fa-chevron-left"></i> basic01
               </a>
             
           </div>
@@ -432,10 +434,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/11/30/Writeup/los/skeleton/" rel="prev" title="skeleton">
-                skeleton <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
