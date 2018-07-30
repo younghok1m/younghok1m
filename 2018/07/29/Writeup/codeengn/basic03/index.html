@@ -92,7 +92,7 @@
 <meta property="og:image" content="https://user-images.githubusercontent.com/40205791/43367385-f7e932a6-9386-11e8-839e-ea85d47f2db3.JPG">
 <meta property="og:image" content="https://user-images.githubusercontent.com/40205791/43367387-f81da1bc-9386-11e8-9525-fc15bf10ad85.JPG">
 <meta property="og:image" content="https://user-images.githubusercontent.com/40205791/43367381-f7193fba-9386-11e8-9657-d03774c9deab.JPG">
-<meta property="og:updated_time" content="2018-07-29T14:38:12.150Z">
+<meta property="og:updated_time" content="2018-07-30T05:56:03.430Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="basic03">
 <meta name="twitter:description" content="문자열 비교 함수가 무엇인지 찾는 문제이다.해당 파일을 실행할시 키 값을 입력받고있으니 일단 키가 무었인지 찾아보기로했다.디버거에서 어떤 string이 들어있나 확인해보았는데 키처럼 보이는 값인 2G83g35Hs2라는 값이 있고 그밑에는 Danke 와 Error가 있다 딱보니 2G83g35Hs2가 키값이고 맞는 키값을 입력하면 Danke 아니면 Error가">
@@ -394,7 +394,7 @@
       
 
       
-        <div style="text-align:center"><br><img src="https://user-images.githubusercontent.com/40205791/43367382-f750432a-9386-11e8-842f-51104ec845be.JPG" alt="1"><br>문자열 비교 함수가 무엇인지 찾는 문제이다.<br><img src="https://user-images.githubusercontent.com/40205791/43367384-f7b1f50c-9386-11e8-805a-3b6e328e866a.JPG" alt="2"><br>해당 파일을 실행할시 키 값을 입력받고있으니 일단 키가 무었인지 찾아보기로했다.<br><img src="https://user-images.githubusercontent.com/40205791/43367385-f7e932a6-9386-11e8-839e-ea85d47f2db3.JPG" alt="3"><br>디버거에서 어떤 string이 들어있나 확인해보았는데 키처럼 보이는 값인 2G83g35Hs2라는 값이 있고 그밑에는 Danke 와 Error가 있다 딱보니 2G83g35Hs2가 키값이고 맞는 키값을 입력하면 Danke 아니면 Error가 나올것 이다.<br><img src="https://user-images.githubusercontent.com/40205791/43367387-f81da1bc-9386-11e8-9525-fc15bf10ad85.JPG" alt="4"><br>주의 깊게 보아야 할곳은<br><br>004028BA<br><br>004028BD<br><br>004028C2<br><br>이 세곳이다.<br>일단 004028BA는 입력을 받는 곳 인것 같다는 생각을했고 004028BD는 실제 키값이다. 그후 00428C2에 있는 vbaStrcmp함수에서 비교를 하게되는것 일것이다.<br><br>004028BD에 bp를 걸고 실행하니 입력을 받는 창이 나왔다.<br><img src="https://user-images.githubusercontent.com/40205791/43367381-f7193fba-9386-11e8-9657-d03774c9deab.JPG" alt="5"><br>Modesty라고 입력했더니 004028BA에 내가 입력한 string이 들어가있엇다.<br>Strcmp는 문자열 비교함수이다. 문제에서 문자열 비교 함수가 무엇인지 찾으라 했으니 정답은 vbaStrcmp이다.<br></div>
+        <div style="text-align:center"><br><img src="https://user-images.githubusercontent.com/40205791/43367382-f750432a-9386-11e8-842f-51104ec845be.JPG" alt="1"><br>문자열 비교 함수가 무엇인지 찾는 문제이다.<br><img src="https://user-images.githubusercontent.com/40205791/43367384-f7b1f50c-9386-11e8-805a-3b6e328e866a.JPG" alt="2"><br>해당 파일을 실행할시 키 값을 입력받고있으니 일단 키가 무었인지 찾아보기로했다.<br><img src="https://user-images.githubusercontent.com/40205791/43367385-f7e932a6-9386-11e8-839e-ea85d47f2db3.JPG" alt="3"><br>디버거에서 어떤 string이 들어있나 확인해보았는데 키처럼 보이는 값인 2G83g35Hs2라는 값이 있고 그밑에는 Danke 와 Error가 있다 딱보니 2G83g35Hs2가 키값이고 맞는 키값을 입력하면 Danke 아니면 Error가 나올것 이다.<br><img src="https://user-images.githubusercontent.com/40205791/43367387-f81da1bc-9386-11e8-9525-fc15bf10ad85.JPG" alt="4"><br>주의 깊게 보아야 할곳은<br><br>004028BA<br><br>004028BD<br><br>004028C2<br><br>이 세곳이다.<br>일단 004028BA는 입력을 받는 곳 인것 같다는 생각을했고 004028BD는 실제 키값이다. 그후 00428C2에 있는 vbaStrcmp함수에서 비교를 하게되는것 일것이다.<br><br>004028BD에 bp를 걸고 실행하니 입력을 받는 창이 나왔다.<br><img src="https://user-images.githubusercontent.com/40205791/43367381-f7193fba-9386-11e8-9657-d03774c9deab.JPG" alt="5"><br>Modesty라고 입력했더니 004028BA에 내가 입력한 string이 들어가고 4028BD에는 실제 키값이있다.<br>4028C2는 vbaStrcmp를 call하고있다 두개의 값이 들어간 이후에 vbaStrcmp를 call했으니 비교 함수일 것이다.<br>Strcmp는 문자열 비교함수이고 문제에서 문자열 비교 함수가 무엇인지 찾으라 했으니 정답은 vbaStrcmp이다.<br></div>
 
 
       
