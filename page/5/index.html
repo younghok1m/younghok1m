@@ -81,7 +81,7 @@
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="Mode5ty">
-<meta property="og:url" content="http://modesty.kr/archives/2017/12/page/2/index.html">
+<meta property="og:url" content="http://modesty.kr/page/5/index.html">
 <meta property="og:site_name" content="Mode5ty">
 <meta property="og:locale" content="en">
 <meta name="twitter:card" content="summary">
@@ -115,13 +115,13 @@
 
 
 
-  <link rel="canonical" href="http://modesty.kr/archives/2017/12/page/2/"/>
+  <link rel="canonical" href="http://modesty.kr/page/5/"/>
 
 
 
 
 
-  <title>Archive | Mode5ty</title>
+  <title>Mode5ty</title>
   
 
 
@@ -140,7 +140,8 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left 
+  page-home">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -267,410 +268,196 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-
-  
-  
-  
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
-
-      <span class="archive-page-counter">
-        
-        
-         
-        
-        OK! 41 posts in total. Keep on posting.
-      </span>
-
+  <section id="posts" class="posts-expand">
+    
       
 
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://modesty.kr/2017/11/28/Writeup/los/gremlin/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Mode5ty">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Mode5ty">
+    </span>
+
+    
+      <header class="post-header">
+
         
         
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/11/28/Writeup/los/gremlin/" itemprop="url">gremlin</a></h1>
         
 
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-11-28T16:27:00+09:00">
+                2017-11-28
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Writeup/" itemprop="url" rel="index">
+                    <span itemprop="name">Writeup</span>
+                  </a>
+                </span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Writeup/Load-of-SQL-injection/" itemprop="url" rel="index">
+                    <span itemprop="name">Load of SQL injection</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
         
           
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2017">2017</h1>
-          </div>
+            <div style="text-align:center"><br><strong>gremlin</strong><br><p><br><img src="https://user-images.githubusercontent.com/40205791/42169498-de649fb6-7e4e-11e8-998d-5ddffef55438.jpg" alt="1"><br>preg_match함수로 prob,언더바 등을 필터링 하고 있다.<br>result값에 id값이 있으면 풀린다고 한다.<br><img src="https://user-images.githubusercontent.com/40205791/42169499-dea6438a-7e4e-11e8-915d-5cb52a7d4165.jpg" alt="2"><br>id값만 있으면 되니까 간단하게 풀었다.<br>id값 앞뒤로 쿼터로 감싸져있어서 id값 뒤에 쿼터하나 추가해주고 or 연산자로 둘다 참으로 만들어서 풀었다.<br>또다른 방법으로 풀수도 있다.<br><img src="https://user-images.githubusercontent.com/40205791/42169501-deea46c0-7e4e-11e8-93ff-bec7f4c3da1f.jpg" alt="3"><br>(back slash)를 이용하는 방법이다.<br>백슬레쉬를 입력하게되면 백슬레쉬 뒤의 ‘(쿼터)를 인식(?)하지 않는다고 생각하면 된다.<br>그렇게 되면 id값에는 결국 id=’\ and pw=’ 이렇게 들어가고 웹에서 받아 들이는 쿼리는 다음과 같다.<br>select id from prob_gremlin where id=’\ and pw=’ || 1<br>앞에 값이 거짓 뒤에 1이 참이 되어 문제가 풀린다.<br></p></div>
+
+          
         
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/12/07/Writeup/ch4n3/Strcmp/" itemprop="url">
-              
-                <span itemprop="name">Strcmp(Web)</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-12-07T19:53:00+09:00"
-              content="2017-12-07" >
-          12-07
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/12/06/Writeup/ch4n3/VeryeasySQLi/" itemprop="url">
-              
-                <span itemprop="name">Very easy SQLi(Web)</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-12-06T23:08:00+09:00"
-              content="2017-12-06" >
-          12-06
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/12/06/Writeup/ch4n3/whereisadminpw/" itemprop="url">
-              
-                <span itemprop="name">Where is admin's pw?(Web)</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-12-06T22:45:00+09:00"
-              content="2017-12-06" >
-          12-06
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/12/06/Writeup/ch4n3/RandomInteger/" itemprop="url">
-              
-                <span itemprop="name">Random Integer(Web)</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-12-06T19:58:00+09:00"
-              content="2017-12-06" >
-          12-06
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/12/06/Writeup/ch4n3/whatcanido/" itemprop="url">
-              
-                <span itemprop="name">What can i do?(Web)</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-12-06T17:05:00+09:00"
-              content="2017-12-06" >
-          12-06
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/12/06/Writeup/ch4n3/Reverse/" itemprop="url">
-              
-                <span itemprop="name">Reverse!(Crypto)</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-12-06T16:58:00+09:00"
-              content="2017-12-06" >
-          12-06
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/12/06/Writeup/ch4n3/baseencoding/" itemprop="url">
-              
-                <span itemprop="name">Base인코딩을 아니?(Crypto)</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-12-06T16:51:00+09:00"
-              content="2017-12-06" >
-          12-06
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/12/06/Writeup/ch4n3/crypto/" itemprop="url">
-              
-                <span itemprop="name">crypto is my Mother(Crypto)</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-12-06T16:37:00+09:00"
-              content="2017-12-06" >
-          12-06
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/12/05/Writeup/ch4n3/SimpleBlindSql/" itemprop="url">
-              
-                <span itemprop="name">Simple Blind SQLi(Web)</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-12-05T23:31:00+09:00"
-              content="2017-12-05" >
-          12-05
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/12/01/Writeup/los/darknight/" itemprop="url">
-              
-                <span itemprop="name">darknight</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-12-01T10:36:00+09:00"
-              content="2017-12-01" >
-          12-01
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+<!-- disqus page -->
+
+
+
+<h2> 댓글 남기기</h2>
+<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://younghok1m-github-io.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
   </div>
   
   
   
+  </article>
+
+
+    
+  </section>
 
   
   <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/archives/2017/12/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/archives/2017/12/">1</a><span class="page-number current">2</span>
+    <a class="extend prev" rel="prev" href="/page/4/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/4/">4</a><span class="page-number current">5</span>
   </nav>
-
 
 
 

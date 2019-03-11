@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Wargame,los," />
 
 
 
@@ -79,13 +79,26 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Mode5ty">
-<meta property="og:url" content="http://modesty.kr/archives/2017/12/page/2/index.html">
+<meta name="description" content="darknight필터링은 gloem문제랑 별로 다를게 없는데 싱글쿼터가 필터링이다. 제일 중요한게 필터링이고 pw와 no를 입력받지만 싱글쿼터가 필터링이라 wildcard도 못쓰는 상황에서 substr과 ascii를 우회해야한다.기본적인 인젝션을 해봤는데 Hello guest가 뜨고 id값에 admin을 넣어주면 admin이 나올 것이다.싱글쿼터를 쓸 수">
+<meta name="keywords" content="Wargame,los">
+<meta property="og:type" content="article">
+<meta property="og:title" content="darknight">
+<meta property="og:url" content="http://modesty.kr/2017/12/01/Writeup/los/darknight/index.html">
 <meta property="og:site_name" content="Mode5ty">
+<meta property="og:description" content="darknight필터링은 gloem문제랑 별로 다를게 없는데 싱글쿼터가 필터링이다. 제일 중요한게 필터링이고 pw와 no를 입력받지만 싱글쿼터가 필터링이라 wildcard도 못쓰는 상황에서 substr과 ascii를 우회해야한다.기본적인 인젝션을 해봤는데 Hello guest가 뜨고 id값에 admin을 넣어주면 admin이 나올 것이다.싱글쿼터를 쓸 수">
 <meta property="og:locale" content="en">
+<meta property="og:image" content="https://user-images.githubusercontent.com/40205791/54105548-af264180-4416-11e9-9f3d-4e275b0fe68c.jpg">
+<meta property="og:image" content="https://user-images.githubusercontent.com/40205791/54105549-af264180-4416-11e9-8b4a-f589e96a4b33.jpg">
+<meta property="og:image" content="https://user-images.githubusercontent.com/40205791/54105550-afbed800-4416-11e9-98e3-5eb4fba6c048.jpg">
+<meta property="og:image" content="https://user-images.githubusercontent.com/40205791/54105551-afbed800-4416-11e9-844e-e22ca96146d4.jpg">
+<meta property="og:image" content="https://user-images.githubusercontent.com/40205791/54105554-b1889b80-4416-11e9-8236-d9e8a3e2cf93.jpg">
+<meta property="og:image" content="https://user-images.githubusercontent.com/40205791/54105555-b2b9c880-4416-11e9-9f07-6734f271ae8f.jpg">
+<meta property="og:image" content="https://user-images.githubusercontent.com/40205791/54105558-b3eaf580-4416-11e9-850b-2ff8e6d674db.jpg">
+<meta property="og:updated_time" content="2019-03-11T07:04:34.621Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Mode5ty">
+<meta name="twitter:title" content="darknight">
+<meta name="twitter:description" content="darknight필터링은 gloem문제랑 별로 다를게 없는데 싱글쿼터가 필터링이다. 제일 중요한게 필터링이고 pw와 no를 입력받지만 싱글쿼터가 필터링이라 wildcard도 못쓰는 상황에서 substr과 ascii를 우회해야한다.기본적인 인젝션을 해봤는데 Hello guest가 뜨고 id값에 admin을 넣어주면 admin이 나올 것이다.싱글쿼터를 쓸 수">
+<meta name="twitter:image" content="https://user-images.githubusercontent.com/40205791/54105548-af264180-4416-11e9-9f3d-4e275b0fe68c.jpg">
 
 
 
@@ -115,13 +128,13 @@
 
 
 
-  <link rel="canonical" href="http://modesty.kr/archives/2017/12/page/2/"/>
+  <link rel="canonical" href="http://modesty.kr/2017/12/01/Writeup/los/darknight/"/>
 
 
 
 
 
-  <title>Archive | Mode5ty</title>
+  <title>darknight | Mode5ty</title>
   
 
 
@@ -140,7 +153,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -268,410 +281,223 @@
           <div id="content" class="content">
             
 
+  <div id="posts" class="posts-expand">
+    
+
+  
+
   
   
   
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
 
-      <span class="archive-page-counter">
-        
-        
-         
-        
-        OK! 41 posts in total. Keep on posting.
-      </span>
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://modesty.kr/2017/12/01/Writeup/los/darknight/">
 
-      
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Mode5ty">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Mode5ty">
+    </span>
+
+    
+      <header class="post-header">
 
         
         
+          <h1 class="post-title" itemprop="name headline">darknight</h1>
         
 
-        
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-12-01T10:36:00+09:00">
+                2017-12-01
+              </time>
+            
+
+            
+
+            
+          </span>
+
           
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2017">2017</h1>
-          </div>
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/12/07/Writeup/ch4n3/Strcmp/" itemprop="url">
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
               
-                <span itemprop="name">Strcmp(Web)</span>
+                <span class="post-meta-item-text">In</span>
               
-            </a>
-        
-      </h2>
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Writeup/" itemprop="url" rel="index">
+                    <span itemprop="name">Writeup</span>
+                  </a>
+                </span>
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-12-07T19:53:00+09:00"
-              content="2017-12-07" >
-          12-07
-        </time>
-      </div>
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Writeup/Load-of-SQL-injection/" itemprop="url" rel="index">
+                    <span itemprop="name">Load of SQL injection</span>
+                  </a>
+                </span>
 
-    </header>
-  </article>
+                
+                
+              
+            </span>
+          
+
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        <div style="text-align:center"><br><strong>darknight</strong><br><p><br><img src="https://user-images.githubusercontent.com/40205791/54105548-af264180-4416-11e9-9f3d-4e275b0fe68c.jpg" alt="1"><br>필터링은 gloem문제랑 별로 다를게 없는데 싱글쿼터가 필터링이다. 제일 중요한게 필터링이고 pw와 no를 입력받지만 싱글쿼터가 필터링이라 wildcard도 못쓰는 상황에서 substr과 ascii를 우회해야한다.<br><img src="https://user-images.githubusercontent.com/40205791/54105549-af264180-4416-11e9-8b4a-f589e96a4b33.jpg" alt="2"><br>기본적인 인젝션을 해봤는데 Hello guest가 뜨고 id값에 admin을 넣어주면 admin이 나올 것이다.<br><img src="https://user-images.githubusercontent.com/40205791/54105550-afbed800-4416-11e9-98e3-5eb4fba6c048.jpg" alt="3"><br>싱글쿼터를 쓸 수 없는 제한적인 환경이라 admin을 hex encode해서 넣었는데 참인 hello admin이 나온다 이제 substr과 ascii를 우회해서 blind로 pw를 뽑아내면 된다.<br><img src="https://user-images.githubusercontent.com/40205791/54105551-afbed800-4416-11e9-844e-e22ca96146d4.jpg" alt="4"><br>패스워드 자리수를 게싱했는데 또 8자리 였다.<br><img src="https://user-images.githubusercontent.com/40205791/54105554-b1889b80-4416-11e9-8236-d9e8a3e2cf93.jpg" alt="5"><br>ascii는 ord로 우회하고 substr은 mid함수로 우회할 수 있었으나 hello guest가 떴다.<br>약간(?) 당황했는데 id값에 admin을 주지않아서 그런것 이였다.<br><img src="https://user-images.githubusercontent.com/40205791/54105555-b2b9c880-4416-11e9-9f07-6734f271ae8f.jpg" alt="6"><br>id에 admin을 넣어주고 and연산 시킨다음 패스워드를 뽑았더니 참이 나온다. 이제 패스워드 자리마다 뽑아주면 끝이다.<br><img src="https://user-images.githubusercontent.com/40205791/54105558-b3eaf580-4416-11e9-850b-2ff8e6d674db.jpg" alt="7"><br>Clear<br></p></div>
+
+
+
+
+
+
 
 
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/12/06/Writeup/ch4n3/VeryeasySQLi/" itemprop="url">
-              
-                <span itemprop="name">Very easy SQLi(Web)</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-12-06T23:08:00+09:00"
-              content="2017-12-06" >
-          12-06
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/12/06/Writeup/ch4n3/whereisadminpw/" itemprop="url">
-              
-                <span itemprop="name">Where is admin's pw?(Web)</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-12-06T22:45:00+09:00"
-              content="2017-12-06" >
-          12-06
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/12/06/Writeup/ch4n3/RandomInteger/" itemprop="url">
-              
-                <span itemprop="name">Random Integer(Web)</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-12-06T19:58:00+09:00"
-              content="2017-12-06" >
-          12-06
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/12/06/Writeup/ch4n3/whatcanido/" itemprop="url">
-              
-                <span itemprop="name">What can i do?(Web)</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-12-06T17:05:00+09:00"
-              content="2017-12-06" >
-          12-06
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/12/06/Writeup/ch4n3/Reverse/" itemprop="url">
-              
-                <span itemprop="name">Reverse!(Crypto)</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-12-06T16:58:00+09:00"
-              content="2017-12-06" >
-          12-06
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/12/06/Writeup/ch4n3/baseencoding/" itemprop="url">
-              
-                <span itemprop="name">Base인코딩을 아니?(Crypto)</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-12-06T16:51:00+09:00"
-              content="2017-12-06" >
-          12-06
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/12/06/Writeup/ch4n3/crypto/" itemprop="url">
-              
-                <span itemprop="name">crypto is my Mother(Crypto)</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-12-06T16:37:00+09:00"
-              content="2017-12-06" >
-          12-06
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/12/05/Writeup/ch4n3/SimpleBlindSql/" itemprop="url">
-              
-                <span itemprop="name">Simple Blind SQLi(Web)</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-12-05T23:31:00+09:00"
-              content="2017-12-05" >
-          12-05
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/12/01/Writeup/los/darknight/" itemprop="url">
-              
-                <span itemprop="name">darknight</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-12-01T10:36:00+09:00"
-              content="2017-12-01" >
-          12-01
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Wargame/" rel="tag"># Wargame</a>
+          
+            <a href="/tags/los/" rel="tag"># los</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/11/30/Writeup/los/skeleton/" rel="next" title="skeleton">
+                <i class="fa fa-chevron-left"></i> skeleton
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+              <a href="/2017/12/05/Writeup/ch4n3/SimpleBlindSql/" rel="prev" title="Simple Blind SQLi(Web)">
+                Simple Blind SQLi(Web) <i class="fa fa-chevron-right"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+<!-- disqus page -->
+
+
+
+<h2> 댓글 남기기</h2>
+<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://younghok1m-github-io.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+
+      
+      
+    </footer>
   </div>
   
   
   
-
-  
-  <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/archives/2017/12/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/archives/2017/12/">1</a><span class="page-number current">2</span>
-  </nav>
+  </article>
 
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -679,6 +505,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -894,6 +724,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
