@@ -283,6 +283,188 @@
   
   
   <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://modesty.kr/2017/11/28/Writeup/los/goblin/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Mode5ty">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/avatar.gif">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Mode5ty">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                <a class="post-title-link" href="/2017/11/28/Writeup/los/goblin/" itemprop="url">goblin</a></h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">Posted on</span>
+              
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2017-11-28T16:37:00+09:00">
+                2017-11-28
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">In</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Writeup/" itemprop="url" rel="index">
+                    <span itemprop="name">Writeup</span>
+                  </a>
+                </span>
+
+                
+                
+                  , 
+                
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/Writeup/Load-of-SQL-injection/" itemprop="url" rel="index">
+                    <span itemprop="name">Load of SQL injection</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+
+          
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <div style="text-align:center"><br><strong>goblin</strong><br><p><br><img src="https://user-images.githubusercontent.com/40205791/42169797-c2da3f70-7e4f-11e8-8252-98b06cedc39a.jpg" alt="1"><br>preg_match로 이번엔 쿼터도 필터링하고 id는 admin일 때 풀리고 id값은 guest로 고정이라서 no값만 입력 가능하다.<br><img src="https://user-images.githubusercontent.com/40205791/42169798-c31ce49c-7e4f-11e8-8e42-46a0be0a539a.jpg" alt="2"><br>no값에 0을 넣었을 때 아무런 반응이 없는걸로 보아 prob_goblin 테이블 안에 id=’guest’이고 no=0 인 값은 없는 것 같다.<br><img src="https://user-images.githubusercontent.com/40205791/42169799-c35f459e-7e4f-11e8-9d0d-74197b318fe5.jpg" alt="3"><br>or 연산자로 id값에 admin을 넣었는데 풀리지 않았다 왜 안풀리나 했는데 내가 넣은 id값에 admin이 문자열 취급을 못받고 있다 그래서 쿼터를 쓰려고했는데 쿼터는 필터링이다 그럼 쿼터를 쓰지않고 admin이라는 값을 전달해야하는데 sql injection bypass 이런식으로 검색하면 많이 나온다 참고하시길<br><img src="https://user-images.githubusercontent.com/40205791/42169800-c3a0c500-7e4f-11e8-978c-a6c3f548fc11.jpg" alt="4"><br>id값에 0x61646D696E라고 입력하면 풀린다. 0x61646D696E는 admin이라는 값을 hex인코딩 한 값이다.<br>물론 hex인코딩 말고 할 수 있는 방법은 여러가지가 있다.<br></p></div>
+
+          
+        
+      
+    </div>
+    
+    
+    
+
+    
+
+    
+
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+<!-- disqus page -->
+
+
+
+<h2> 댓글 남기기</h2>
+<div id="disqus_thread"></div>
+<script>
+
+/**
+*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+(function() { // DON'T EDIT BELOW THIS LINE
+var d = document, s = d.createElement('script');
+s.src = 'https://younghok1m-github-io.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
     <link itemprop="mainEntityOfPage" href="http://modesty.kr/2017/11/28/Writeup/los/cobolt/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -684,7 +866,7 @@ s.setAttribute('data-timestamp', +new Date());
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">42</span>
+                  <span class="site-state-item-count">43</span>
                   <span class="site-state-item-name">posts</span>
                 </a>
               </div>
@@ -706,7 +888,7 @@ s.setAttribute('data-timestamp', +new Date());
               
               <div class="site-state-item site-state-tags">
                 <a href="/tags/index.html">
-                  <span class="site-state-item-count">9</span>
+                  <span class="site-state-item-count">10</span>
                   <span class="site-state-item-name">tags</span>
                 </a>
               </div>
