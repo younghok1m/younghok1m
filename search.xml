@@ -53,6 +53,27 @@
     </entry>
     
     <entry>
+      <title>Real취약점</title>
+      <link href="/2018/07/20/RealWorld/Realwolrd/"/>
+      <url>/2018/07/20/RealWorld/Realwolrd/</url>
+      <content type="html"><![CDATA[<div style="text-align:center"><br><strong>drakelf</strong><br><p><br>현재는 스포픽이라고 운영되는 사이트이며 지인의 부탁을 받고 취약점을 찾게 되었다.<br>time 인젝션 취약점을 찾아 디비명 유저명등을 뽑아냈음<br>그리고 admin필터링 미흡등등 견함<br></p></div>]]></content>
+      
+      <categories>
+          
+          <category> RealWorld </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 취약점 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>basic01</title>
       <link href="/2018/07/18/Writeup/codeengn/basic01/"/>
       <url>/2018/07/18/Writeup/codeengn/basic01/</url>
